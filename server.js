@@ -4,11 +4,6 @@ const Next = require("next")
 const port = parseInt(process.env.PORT, 10) || 3000
 const dev = process.env.NODE_ENV !== "production"
 
-// if (isRevved(req.req.originalUrl)) {
-//   const isRevved = path => /[a-f0-9]{7,}/.test(path)
-//   res.setHeader("Cache-Control", "public, max-age=31536000, immutable")
-// }
-
 fastify.register((fastify, opts, next) => {
   const app = Next({ dev })
   app
@@ -24,6 +19,11 @@ fastify.register((fastify, opts, next) => {
 
       fastify.get("/*", async (req, reply) => {
         await app.handleRequest(req.req, reply.res)
+        // const isRevved = path => /[a-f0-9]{7,}/.test(path)
+        // if (!dev && isRevved(req.req.originalUrl)) {
+        //   res.setHeader("Cache-Control", "public, max-age=31536000, immutable")
+        // }
+
         reply.sent = true
         return
       })
@@ -33,7 +33,6 @@ fastify.register((fastify, opts, next) => {
         reply.sent = true
         return
       })
-
       next()
     })
     .catch(err => next(err))

@@ -1,88 +1,19 @@
 import { css } from "styled-components"
+import FontFaceList from "./FontFacesList"
+
+const generateFontFace = (ff, fw, fs, woff2, woff) => css`
+  @font-face {
+    font-family: ${ff};
+    src: url(${woff2}) format("woff2"), url(${woff}) format("woff");
+    font-weight: ${fw};
+    font-style: ${fs};
+  }
+`
+
+const fontFaces = FontFaceList.map(f =>
+  generateFontFace(f[0], f[1], f[2], f[3])
+)
 
 export default css`
-  @font-face {
-    font-family: proxima-nova;
-    src: url("/static/fonts/normal-100-1em-proxima-nova.woff2") format("woff2"),
-      url("/static/fonts/normal-100-1em-proxima-nova.woff") format("woff");
-    font-weight: 100;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: proxima-nova;
-    src: url("/static/fonts/normal-300-1em-proxima-nova.woff2") format("woff2"),
-      url("/static/fonts/normal-300-1em-proxima-nova.woff") format("woff");
-    font-weight: 300;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: proxima-nova;
-    src: url("/static/fonts/normal-400-1em-proxima-nova.woff2") format("woff2"),
-      url("/static/fonts/normal-400-1em-proxima-nova.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: proxima-nova;
-    src: url("/static/fonts/italic-100-1em-proxima-nova.woff2") format("woff2"),
-      url("/static/fonts/italic-100-1em-proxima-nova.woff") format("woff");
-    font-weight: 100;
-    font-style: italic;
-  }
-  @font-face {
-    font-family: proxima-nova;
-    src: url("/static/fonts/normal-700-1em-proxima-nova.woff2") format("woff2"),
-      url("/static/fonts/normal-700-1em-proxima-nova.woff") format("woff");
-    font-weight: 700;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: proxima-nova;
-    src: url("/static/fonts/italic-700-1em-proxima-nova.woff2") format("woff2"),
-      url("/static/fonts/italic-700-1em-proxima-nova.woff") format("woff");
-    font-weight: 700;
-    font-style: italic;
-  }
-  @font-face {
-    font-family: futura-pt;
-    src: url("/static/fonts/normal-300-1em-futura-pt.woff2") format("woff2"),
-      url("/static/fonts/normal-300-1em-futura-pt.woff") format("woff");
-    font-weight: 300;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: futura-pt;
-    src: url("/static/fonts/normal-400-1em-futura-pt.woff2") format("woff2"),
-      url("/static/fonts/normal-400-1em-futura-pt.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: futura-pt;
-    src: url("/static/fonts/normal-700-1em-futura-pt.woff2") format("woff2"),
-      url("/static/fonts/normal-700-1em-futura-pt.woff") format("woff");
-    font-weight: 700;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: futura-pt;
-    src: url("/static/fonts/italic-300-1em-futura-pt.woff2") format("woff2"),
-      url("/static/fonts/italic-300-1em-futura-pt.woff") format("woff");
-    font-weight: 300;
-    font-style: italic;
-  }
-  @font-face {
-    font-family: futura-pt;
-    src: url("/static/fonts/italic-400-1em-futura-pt.woff2") format("woff2"),
-      url("/static/fonts/italic-400-1em-futura-pt.woff") format("woff");
-    font-weight: 400;
-    font-style: italic;
-  }
-  @font-face {
-    font-family: futura-pt;
-    src: url("/static/fonts/italic-700-1em-futura-pt.woff2") format("woff2"),
-      url("/static/fonts/italic-700-1em-futura-pt.woff") format("woff");
-    font-weight: 700;
-    font-style: italic;
-  }
+  ${fontFaces}
 `
