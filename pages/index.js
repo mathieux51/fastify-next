@@ -2,14 +2,9 @@ import React, { Fragment } from "react"
 import styled, { ThemeProvider } from "styled-components"
 import Header from "../components/Header"
 import Head from "../components/Head"
+import Body from "../components/Body"
 import GlobalStyle from "../components/GlobalStyle"
-
-const Title = styled.h1`
-  color: red;
-  font-size: 50px;
-`
-
-const theme = {}
+import theme from "../theme"
 
 export default class extends React.PureComponent {
   async componentDidMount() {
@@ -35,7 +30,6 @@ export default class extends React.PureComponent {
       document.documentElement.className += " fonts-loaded"
       sessionStorage.fontsLoadedFoutWithClass = true
     }
-    // })()
   }
   render() {
     return (
@@ -44,7 +38,7 @@ export default class extends React.PureComponent {
           <GlobalStyle whiteColor />
           <Head />
           <Header />
-          <Title>My page</Title>
+          <Body />
         </Fragment>
       </ThemeProvider>
     )
