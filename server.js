@@ -19,9 +19,11 @@ fastify.register((fastify, opts, next) => {
 
       fastify.get("/*", async (req, reply) => {
         await app.handleRequest(req.req, reply.res)
+
+        // 🚧 Fix me 🚧
         // const isRevved = path => /[a-f0-9]{7,}/.test(path)
         // if (!dev && isRevved(req.req.originalUrl)) {
-        //   res.setHeader("Cache-Control", "public, max-age=31536000, immutable")
+        //   reply.header("Cache-Control", "public, max-age=31536000, immutable")
         // }
 
         reply.sent = true
