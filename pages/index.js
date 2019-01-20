@@ -3,7 +3,6 @@ import styled, { ThemeProvider } from "styled-components"
 import Header from "../components/Header"
 import Head from "../components/Head"
 import GlobalStyle from "../components/GlobalStyle"
-import FontFaces from "../components/FontFaces"
 
 const Title = styled.h1`
   color: red;
@@ -12,14 +11,42 @@ const Title = styled.h1`
 
 const theme = {}
 
-export default () => (
-  <ThemeProvider theme={theme}>
-    <Fragment>
-      <GlobalStyle whiteColor />
-      <FontFaces />
-      <Head />
-      <Header />
-      <Title>My page</Title>
-    </Fragment>
-  </ThemeProvider>
-)
+export default class extends React.PureComponent {
+  async componentDidMount() {
+    if (sessionStorage.fontsLoadedFoutWithClass) {
+      document.documentElement.className += " fonts-loaded"
+      return
+    }
+    if ("fonts" in document) {
+      await Promise.all([
+        document.fonts.load("italic 100 1em proxima-nova"),
+        document.fonts.load("italic 300 1em futura-pt"),
+        document.fonts.load("italic 400 1em futura-pt"),
+        document.fonts.load("italic 700 1em futura-pt"),
+        document.fonts.load("italic 700 1em proxima-nova"),
+        document.fonts.load("normal 100 1em proxima-nova"),
+        document.fonts.load("normal 300 1em futura-pt"),
+        document.fonts.load("normal 300 1em proxima-nova"),
+        document.fonts.load("normal 400 1em futura-pt"),
+        document.fonts.load("normal 400 1em proxima-nova"),
+        document.fonts.load("normal 700 1em futura-pt"),
+        document.fonts.load("normal 700 1em proxima-nova")
+      ])
+      document.documentElement.className += " fonts-loaded"
+      sessionStorage.fontsLoadedFoutWithClass = true
+    }
+    // })()
+  }
+  render() {
+    return (
+      <ThemeProvider theme={theme}>
+        <Fragment>
+          <GlobalStyle whiteColor />
+          <Head />
+          <Header />
+          <Title>My page</Title>
+        </Fragment>
+      </ThemeProvider>
+    )
+  }
+}

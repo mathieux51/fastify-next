@@ -1,6 +1,8 @@
 import { createGlobalStyle } from "styled-components"
+import FontFaces from "./FontFaces"
 
 export default createGlobalStyle`
+  ${FontFaces}
   body {
     color: ${props => (props.whiteColor ? "white" : "black")};
 		font-family: sans-serif;

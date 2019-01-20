@@ -4,6 +4,11 @@ const Next = require("next")
 const port = parseInt(process.env.PORT, 10) || 3000
 const dev = process.env.NODE_ENV !== "production"
 
+// if (isRevved(req.req.originalUrl)) {
+//   const isRevved = path => /[a-f0-9]{7,}/.test(path)
+//   res.setHeader("Cache-Control", "public, max-age=31536000, immutable")
+// }
+
 fastify.register((fastify, opts, next) => {
   const app = Next({ dev })
   app
