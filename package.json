@@ -8,7 +8,7 @@
     "build": "next build",
     "export": "next export",
     "start": "NODE_ENV=production node server.js",
-    "deploy": "next build && next export && touch out/.nojekyll && push-dir --dir=out --branch=master"
+    "deploy": "next build && next export && push-dir --dir=out --branch=master"
   },
   "keywords": [],
   "author": "",
