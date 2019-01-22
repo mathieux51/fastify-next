@@ -1,4 +1,4 @@
 const withFonts = require("next-fonts")
 module.exports = withFonts({
-  assetPrefix: process.env.NODE_ENV === "production" ? "/fastify-next" : ""
+  assetPrefix: process.env.NODE_ENV === "production" ? "/{reponame}" : ""
 })
