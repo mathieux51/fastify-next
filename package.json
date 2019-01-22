@@ -8,7 +8,7 @@
     "build": "next build",
     "export": "next export",
     "start": "NODE_ENV=production node server.js",
-    "deploy": "next build && next export && touch out/.nojekyll && push-dir --dir=out --branch=gt-pages"
+    "deploy": "next build && next export && touch out/.nojekyll && push-dir --dir=out --branch=gh-pages"
   },
   "keywords": [],
   "author": "",
