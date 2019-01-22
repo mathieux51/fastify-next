@@ -9,13 +9,13 @@ fastify.register((fastify, opts, next) => {
   app
     .prepare()
     .then(() => {
-      if (dev) {
-        fastify.get("/_next/*", async (req, reply) => {
-          await app.handleRequest(req.req, reply.res)
-          reply.sent = true
-          return
-        })
-      }
+      // if (dev) {
+      fastify.get("/_next/*", async (req, reply) => {
+        await app.handleRequest(req.req, reply.res)
+        reply.sent = true
+        return
+      })
+      // }
 
       fastify.get("/*", async (req, reply) => {
         await app.handleRequest(req.req, reply.res)
