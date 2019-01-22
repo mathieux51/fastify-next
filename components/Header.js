@@ -18,7 +18,7 @@ const Button = styled.button.attrs({
 const List = () => (
   <Ul>
     <Li>
-      <Link prefetch href="/">
+      <Link prefetch href="/" as={process.env.BACKEND_URL + "/"}>
         <a>Home</a>
       </Link>
     </Li>
