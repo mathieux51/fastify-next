@@ -28,6 +28,9 @@ export default createGlobalStyle`
   .flex {
     display: flex;
   }
+  .fxd-c {
+    flex-direction: column;
+  }
   .flex-1 {
     flex: 1;
   }
@@ -45,5 +48,21 @@ export default createGlobalStyle`
   .ttu {
     text-transform: uppercase;
   }
-
+  .tdn {
+    text-decoration: none;
+  }
+  .ta-c {
+    text-align: center;
+  }
+  /* margin/padding */
+  .m0 {
+    margin: 0;
+  }
+  .p0 {
+    padding: 0;
+  }
+  /* display */
+  .d {
+    display: block;
+  }
 `
