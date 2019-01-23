@@ -25,6 +25,10 @@ export default createGlobalStyle`
     background: transparent;
   }
 
+  ul {
+    list-style: none;
+  }
+
   .flex {
     display: flex;
   }
