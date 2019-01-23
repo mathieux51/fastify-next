@@ -1,12 +1,12 @@
-import { createGlobalStyle } from "styled-components"
-import FontFaces from "./FontFaces"
-import { normalize } from "polished"
+import { createGlobalStyle } from 'styled-components'
+import FontFaces from './FontFaces'
+import { normalize } from 'polished'
 
 export default createGlobalStyle`
   ${FontFaces}
   ${normalize()}
   body {
-    color: ${props => (props.whiteColor ? "white" : "black")};
+    color: ${({ theme }) => theme.g38};
 		font-family: sans-serif;
     background: ${({ theme }) => theme.bg}
   }
@@ -41,9 +41,23 @@ export default createGlobalStyle`
     height: 100%;
   }
   /* font-size */
+  .f12 {
+    font-size: 12px;
+  }
   .f16 {
     font-size: 16px;
   }
+  .f31 {
+    font-size: 31px;
+  }
+
+  .fw300 {
+    font-weight: 300;
+  }
+  .fw400 {
+    font-weight: 400;
+  }
+
   /* Text */
   .ttu {
     text-transform: uppercase;

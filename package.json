@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node server.js",
+    "dev": "next",
     "build": "next build",
     "export": "next export",
-    "start": "NODE_ENV=production node server.js",
+    "start": "next start",
     "predeploy": "rimraf node_modules/.cache && next build && next export && touch out/.nojekyll",
     "deploy": "git add out/ && git commit -m \"Deploy to gh-pages\" && git subtree push --prefix out origin gh-pages"
   },
