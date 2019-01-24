@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node --inspect server.js",
+    "dev": "next",
     "build": "next build",
     "export": "next export",
-    "start": "NODE_ENV=production node server.js",
+    "start": "next start",
     "predeploy": "rimraf node_modules/.cache && next build && next export && touch out/.nojekyll",
-    "deploy": "git add out/ && git commit -m \"Deploy to gh-pages\" && git subtree push --prefix out origin gh-pages"
+    "deploy": "git add out/ && git commit -m \"Deploy to gh-pages\" && git push origin `git subtree split --prefix out master`:gh-pages --force"
   },
   "keywords": [],
   "author": "",
