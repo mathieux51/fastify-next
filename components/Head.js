@@ -9,7 +9,7 @@ export default () => (
       type="image/x-icon"
       href="/static/images/favicon.ico"
     />
-    <div
+    <script
       dangerouslySetInnerHTML={{
         __html: `
 (function() {
@@ -35,7 +35,6 @@ export default () => (
     document.documentElement.className += ' fonts-loaded'
     sessionStorage.fontsLoadedFoutWithClass = true
   }})()
-  
     `
       }}
     />
