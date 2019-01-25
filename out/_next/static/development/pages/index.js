@@ -418,7 +418,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _FontFaces__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FontFaces */ "./components/FontFaces.js");
 /* harmony import */ var polished__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! polished */ "./node_modules/polished/dist/polished.es.js");
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  ", "\n  ", "\n  body {\n    color: ", ";\n\t\tfont-family: sans-serif;\n    background: ", "\n  }\n\t.fonts-loaded body {\n\t\tfont-family: proxima-nova, sans-serif;\n\t}\n\n  .fonts-loaded .ff-futura-pt {\n    font-family: futura-pt, sans-serif;\n  }\n\n  /* Reset */\n  button {\n    border: 0;\n    padding: 0;\n    background: transparent;\n  }\n\n  ul {\n    list-style: disc;\n  }\n\n  /* flex */\n  .flex {\n    display: flex;\n  }\n  .fxd-c {\n    flex-direction: column;\n  }\n  .flex-1 {\n    flex: 1;\n  }\n  .w100 {\n    width: 100%;\n  }\n  .h100 {\n    height: 100%;\n  }\n  /* font-size */\n  .f12 {\n    font-size: 12px;\n  }\n  .f16 {\n    font-size: 16px;\n  }\n  .f31 {\n    font-size: 31px;\n  }\n\n  .fw300 {\n    font-weight: 300;\n  }\n  .fw400 {\n    font-weight: 400;\n  }\n\n  /* Text */\n  .ttu {\n    text-transform: uppercase;\n  }\n  .tdn {\n    text-decoration: none;\n  }\n  .ta-c {\n    text-align: center;\n  }\n  /* margin/padding */\n  .m0 {\n    margin: 0;\n  }\n  .p0 {\n    padding: 0;\n  }\n  /* display */\n  .d {\n    display: block;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  ", "\n  ", "\n  body {\n    color: ", ";\n\t\tfont-family: sans-serif;\n    background: ", "\n  }\n\t.fonts-loaded body {\n\t\tfont-family: proxima-nova, sans-serif;\n\t}\n\n  .fonts-loaded .ff-futura-pt {\n    font-family: futura-pt, sans-serif;\n  }\n\n  /* Reset */\n  button {\n    border: 0;\n    padding: 0;\n    background: transparent;\n  }\n\n  ul {\n    list-style: none;\n  }\n\n  .flex {\n    display: flex;\n  }\n  .fxd-c {\n    flex-direction: column;\n  }\n  .flex-1 {\n    flex: 1;\n  }\n  .w100 {\n    width: 100%;\n  }\n  .h100 {\n    height: 100%;\n  }\n  /* font-size */\n  .f12 {\n    font-size: 12px;\n  }\n  .f16 {\n    font-size: 16px;\n  }\n  .f31 {\n    font-size: 31px;\n  }\n\n  .fw300 {\n    font-weight: 300;\n  }\n  .fw400 {\n    font-weight: 400;\n  }\n\n  /* Text */\n  .ttu {\n    text-transform: uppercase;\n  }\n  .tdn {\n    text-decoration: none;\n  }\n  .ta-c {\n    text-align: center;\n  }\n  /* margin/padding */\n  .m0 {\n    margin: 0;\n  }\n  .p0 {\n    padding: 0;\n  }\n  /* display */\n  .d {\n    display: block;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -486,6 +486,15 @@ var _jsxFileName = "/Users/mathieu/Projects/learning/react/fastify-next/componen
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
+    dangerouslySetInnerHTML: {
+      __html: "\n(function() {\n  if (sessionStorage.fontsLoadedFoutWithClass) {\n    document.documentElement.className += ' fonts-loaded'\n    return\n  }\n  if ('fonts' in document) {\n    Promise.all([\n      document.fonts.load('italic 100 1em proxima-nova'),\n      document.fonts.load('italic 300 1em futura-pt'),\n      document.fonts.load('italic 400 1em futura-pt'),\n      document.fonts.load('italic 700 1em futura-pt'),\n      document.fonts.load('italic 700 1em proxima-nova'),\n      document.fonts.load('normal 100 1em proxima-nova'),\n      document.fonts.load('normal 300 1em futura-pt'),\n      document.fonts.load('normal 300 1em proxima-nova'),\n      document.fonts.load('normal 400 1em futura-pt'),\n      document.fonts.load('normal 400 1em proxima-nova'),\n      document.fonts.load('normal 700 1em futura-pt'),\n      document.fonts.load('normal 700 1em proxima-nova')\n    ]).then(function (){\n      document.documentElement.className += ' fonts-loaded'\n      sessionStorage.fontsLoadedFoutWithClass = true  \n    })\n  }})()\n    "
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
     },
     __self: this
   }));
@@ -1552,18 +1561,6 @@ module.exports = _typeof;
 /*!******************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/regenerator/index.js ***!
   \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! regenerator-runtime */ "./node_modules/regenerator-runtime/runtime-module.js");
-
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/regenerator/index.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
-  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17840,24 +17837,17 @@ module.exports = function(module) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _default; });
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Header */ "./components/Header.js");
-/* harmony import */ var _components_Head__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Head */ "./components/Head.js");
-/* harmony import */ var _components_Body__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Body */ "./components/Body.js");
-/* harmony import */ var _components_GlobalStyle__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/GlobalStyle */ "./components/GlobalStyle.js");
-/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../theme */ "./theme.js");
-
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Header */ "./components/Header.js");
+/* harmony import */ var _components_Head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Head */ "./components/Head.js");
+/* harmony import */ var _components_Body__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Body */ "./components/Body.js");
+/* harmony import */ var _components_GlobalStyle__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/GlobalStyle */ "./components/GlobalStyle.js");
+/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../theme */ "./theme.js");
 var _jsxFileName = "/Users/mathieu/Projects/learning/react/fastify-next/pages/index.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -17895,88 +17885,43 @@ function (_React$PureComponent) {
   }
 
   _createClass(_default, [{
-    key: "componentDidMount",
-    value: function () {
-      var _componentDidMount = _asyncToGenerator(
-      /*#__PURE__*/
-      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                if (!sessionStorage.fontsLoadedFoutWithClass) {
-                  _context.next = 3;
-                  break;
-                }
-
-                document.documentElement.className += ' fonts-loaded';
-                return _context.abrupt("return");
-
-              case 3:
-                if (!('fonts' in document)) {
-                  _context.next = 8;
-                  break;
-                }
-
-                _context.next = 6;
-                return Promise.all([document.fonts.load('italic 100 1em proxima-nova'), document.fonts.load('italic 300 1em futura-pt'), document.fonts.load('italic 400 1em futura-pt'), document.fonts.load('italic 700 1em futura-pt'), document.fonts.load('italic 700 1em proxima-nova'), document.fonts.load('normal 100 1em proxima-nova'), document.fonts.load('normal 300 1em futura-pt'), document.fonts.load('normal 300 1em proxima-nova'), document.fonts.load('normal 400 1em futura-pt'), document.fonts.load('normal 400 1em proxima-nova'), document.fonts.load('normal 700 1em futura-pt'), document.fonts.load('normal 700 1em proxima-nova')]);
-
-              case 6:
-                document.documentElement.className += ' fonts-loaded';
-                sessionStorage.fontsLoadedFoutWithClass = true;
-
-              case 8:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function componentDidMount() {
-        return _componentDidMount.apply(this, arguments);
-      }
-
-      return componentDidMount;
-    }()
-  }, {
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_components__WEBPACK_IMPORTED_MODULE_2__["ThemeProvider"], {
-        theme: _theme__WEBPACK_IMPORTED_MODULE_7__["default"],
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_components__WEBPACK_IMPORTED_MODULE_1__["ThemeProvider"], {
+        theme: _theme__WEBPACK_IMPORTED_MODULE_6__["default"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 12
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1__["Fragment"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 13
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_GlobalStyle__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_GlobalStyle__WEBPACK_IMPORTED_MODULE_5__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 14
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Head__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Head__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 15
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 16
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Body__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Body__WEBPACK_IMPORTED_MODULE_4__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 17
         },
         __self: this
       })));
@@ -17984,7 +17929,7 @@ function (_React$PureComponent) {
   }]);
 
   return _default;
-}(react__WEBPACK_IMPORTED_MODULE_1___default.a.PureComponent);
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.PureComponent);
 
 
     (function (Component, route) {
