@@ -34,7 +34,7 @@ export default () => (
     ]).then(function (){
       document.documentElement.className += ' fonts-loaded'
       sessionStorage.fontsLoadedFoutWithClass = true  
-    }
+    })
   }})()
     `
       }}
