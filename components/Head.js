@@ -18,7 +18,7 @@ export default () => (
     return
   }
   if ('fonts' in document) {
-    await Promise.all([
+    Promise.all([
       document.fonts.load('italic 100 1em proxima-nova'),
       document.fonts.load('italic 300 1em futura-pt'),
       document.fonts.load('italic 400 1em futura-pt'),
@@ -31,9 +31,10 @@ export default () => (
       document.fonts.load('normal 400 1em proxima-nova'),
       document.fonts.load('normal 700 1em futura-pt'),
       document.fonts.load('normal 700 1em proxima-nova')
-    ])
-    document.documentElement.className += ' fonts-loaded'
-    sessionStorage.fontsLoadedFoutWithClass = true
+    ]).then(function (){
+      document.documentElement.className += ' fonts-loaded'
+      sessionStorage.fontsLoadedFoutWithClass = true  
+    }
   }})()
     `
       }}
