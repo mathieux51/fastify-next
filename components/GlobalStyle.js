@@ -1,10 +1,30 @@
-import { createGlobalStyle } from 'styled-components'
-import FontFaces from './FontFaces'
-import { normalize } from 'polished'
+import { createGlobalStyle } from "styled-components"
+import FontFaces from "./FontFaces"
+import { normalize } from "polished"
 
 export default createGlobalStyle`
   ${FontFaces}
   ${normalize()}
+
+    /* Reset */
+  button {
+    border: 0;
+    padding: 0;
+    background: transparent;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
   body {
     color: ${({ theme }) => theme.g38};
 		font-family: sans-serif;
@@ -18,17 +38,7 @@ export default createGlobalStyle`
     font-family: futura-pt, sans-serif;
   }
 
-  /* Reset */
-  button {
-    border: 0;
-    padding: 0;
-    background: transparent;
-  }
-
-  ul {
-    list-style: none;
-  }
-
+   /* flex */
   .flex {
     display: flex;
   }
@@ -83,4 +93,22 @@ export default createGlobalStyle`
   .d {
     display: block;
   }
+  /* debug */
+  .o {
+    outline: 5px solid gold;
+  }
+  /* position */
+  .relative {
+    position: relative;
+  }
+  .absolute {
+    position: absolute;
+  }
+  .t0 {
+    top: 0;
+  }
+  .l0 {
+    left: 0;
+  }
+
 `
