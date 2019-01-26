@@ -24,7 +24,10 @@ export default createGlobalStyle`
   *, *:before, *:after {
     box-sizing: inherit;
   }
-
+  a {
+    text-decoration: none;
+  }
+  /* fonts */
   body {
     color: ${({ theme }) => theme.g38};
 		font-family: sans-serif;

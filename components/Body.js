@@ -18,21 +18,7 @@ const AspectRatio = styled.div.attrs({ className: "w100 relative" })`
 
 const Row = styled.div.attrs({ className: "absolute t0 l0 w100 h100 flex" })``
 
-const Figure = styled.figure.attrs({
-  className: "flex-1 h100 relative flex jc-c ai-c pointer"
-})`
-  margin: 1px;
-  &:hover {
-    background: ${({ theme }) => theme.g60};
-    opacity: 0.7;
-    transition: opacity 0.14s ease-out;
-    & > figcaption {
-      display: inherit;
-    }
-  }
-`
-
-const Title = styled.figcaption.attrs({
+const Title = styled.h3.attrs({
   className: "fw300 ff-futura-pt f14 ttu ta-c"
 })`
   display: none;
@@ -40,28 +26,61 @@ const Title = styled.figcaption.attrs({
   line-height: 1.6em;
   letter-spacing: 0.6em;
 `
+
+const Col = styled(Link).attrs({
+  className: "flex-1 h100 relative flex jc-c ai-c"
+})`
+  margin: 1px;
+  &:hover,
+  &:focus {
+    background: ${({ theme }) => theme.g60};
+    opacity: 0.7;
+    transition: opacity 0.14s ease-out;
+    & > ${Title} {
+      display: inherit;
+    }
+  }
+`
+
 const Img = styled.img.attrs({
   className: "absolute t0 r0 b0 l0 w100 h100 cover z-1"
 })``
 
+const groupBy2 = arr => {
+  const formatted = []
+  while (arr.length > 0) formatted.push(arr.splice(0, 2))
+  return formatted
+}
+
+const ListItem = ({ project, j }) => (
+  <Col href={project.href}>
+    <Title>{project.title}</Title>
+    <Img src={project.thumbnail} alt={project.title} />
+  </Col>
+)
+
+const Project = ({ p, i }) => (
+  <AspectRatio>
+    <Row>
+      {p.map((project, j) => (
+        <ListItem project={project} key={`${project.title}-${j}`} />
+      ))}
+    </Row>
+  </AspectRatio>
+)
+
 const List = () => (
   <ProjectConsumer>
-    {projects => (
-      <Ul>
-        <AspectRatio>
-          <Row>
-            {projects.map(project => (
-              <Link href="/" key={project.description}>
-                <Figure>
-                  <Title>{project.title}</Title>
-                  <Img src={project.thumbnail} alt={project.title} />
-                </Figure>
-              </Link>
-            ))}
-          </Row>
-        </AspectRatio>
-      </Ul>
-    )}
+    {projects => {
+      const formattedProjects = groupBy2(projects)
+      return (
+        <Ul>
+          {formattedProjects.map((p, i) => (
+            <Project p={p} key={`${p[i].title}-${i}`} />
+          ))}
+        </Ul>
+      )
+    }}
   </ProjectConsumer>
 )
 

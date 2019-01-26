@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "next",
+    "debug": "node --inspect node_modules/.bin/next",
     "build": "next build",
     "export": "next export",
     "start": "next start",

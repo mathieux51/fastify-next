@@ -4,9 +4,11 @@ import p2 from "../../assets/images/helvetica/2.jpg"
 
 export default {
   title: "Helvetica",
+  href: "helvetica",
+  category: [],
   thumbnail,
   photos: [p1, p2],
-  videos: null,
+  video: "",
   description: `Tv serie - 6 x 52'
 
   Directed by Romain Graf

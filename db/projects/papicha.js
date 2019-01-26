@@ -4,9 +4,11 @@ import p2 from "../../assets/images/papicha/2.jpg"
 
 export default {
   title: "Papicha",
+  href: "/papicha",
+  category: [],
   thumbnail,
   photos: [p1, p2],
-  videos: null,
+  video: "",
   description: `Directed by Mounia Meddour
 
   Prod: Scope (BE) / High Sea (FR) / Tayda (ALG) / Ink Connection (FR)
