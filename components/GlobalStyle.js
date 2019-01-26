@@ -45,6 +45,13 @@ export default createGlobalStyle`
   .fxd-c {
     flex-direction: column;
   }
+  .jc-c {
+    justify-content: center;
+  } 
+  .ai-c {
+    align-items: center;
+  }
+
   .flex-1 {
     flex: 1;
   }
@@ -57,6 +64,9 @@ export default createGlobalStyle`
   /* font-size */
   .f12 {
     font-size: 12px;
+  }
+  .f14 {
+    font-size: 14px;
   }
   .f16 {
     font-size: 16px;
@@ -110,5 +120,26 @@ export default createGlobalStyle`
   .l0 {
     left: 0;
   }
-
+  .r0 {
+    right: 0;
+  }
+  .b0 {
+    bottom: 0;
+  }
+  /* img */
+  .cover {
+    object-fit: cover;
+  }
+  .z-1 {
+    z-index: -1;
+  }
+  .z0 {
+    z-index: 0;
+  }
+  .z1 {
+    z-index: 1;
+  }
+  .pointer {
+    cursor: pointer;
+  }
 `

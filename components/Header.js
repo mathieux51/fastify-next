@@ -60,10 +60,10 @@ const H1 = styled.h1.attrs({
 `
 
 const H2 = styled.h2.attrs({
-  className: "m0 ttu f12 ta-c fw400"
+  className: "ttu f12 ta-c fw400"
 })`
   letter-spacing: 5px;
-  margin-bottom: 15px;
+  margin: 8px 0 15px;
 `
 
 export default class extends React.PureComponent {
