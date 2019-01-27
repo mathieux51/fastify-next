@@ -4,7 +4,7 @@ import db from "../db"
 let ProjectContext
 const { Provider, Consumer } = (ProjectContext = React.createContext())
 
-class ProjectProvider extends React.Component {
+class ProjectProvider extends React.PureComponent {
   state = {
     projects: db.projects
   }
@@ -23,9 +23,8 @@ class ProjectProvider extends React.Component {
   //   // onLogout: this.handleLogout
   // }
   render() {
-    return (
-      <Provider value={this.state.projects}>{this.props.children}</Provider>
-    )
+    const { projects } = this.state
+    return <Provider value={projects}>{this.props.children}</Provider>
   }
 }
 
