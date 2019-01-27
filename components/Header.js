@@ -7,7 +7,7 @@ const Nav = styled.nav.attrs({ className: "" })`
   border-bottom: 1px solid ${({ theme }) => theme.g86};
   margin: 15px 20px;
 `
-const A = styled.a.attrs({
+const StyledLink = styled(Link).attrs({
   className: "ff-futura-pt f16 ttu tdn ta-c w100 d"
 })`
   letter-spacing: 1px;
@@ -19,30 +19,28 @@ const Ul = styled.ul.attrs({ className: "fxd-c m0 p0" })`
   border-bottom: 1px solid ${({ theme }) => theme.g86};
   padding-bottom: 15px;
 `
-const Button = styled(A).attrs({
+const Button = styled(StyledLink).attrs({
   as: "button"
 })`
   height: 70px;
 `
 
-const StyledLink = ({ href, txt }) => (
-  <Link href={href}>
-    <li>
-      <A>{txt}</A>
-    </li>
-  </Link>
+const ListItem = ({ href, txt }) => (
+  <li>
+    <StyledLink href={href}>{txt}</StyledLink>
+  </li>
 )
 
 const List = () => (
   <Ul>
-    <StyledLink href="/" txt="home" />
-    <StyledLink href="/feature-tv" txt="features / tv" />
-    <StyledLink href="/documentaries" txt="documentary" />
-    <StyledLink href="/music-videos" txt="music videos" />
-    <StyledLink href="/experimental" txt="experimental" />
-    <StyledLink href="/photography" txt="photography" />
-    <StyledLink href="/contact" txt="contact" />
-    <StyledLink href="/resume" txt="resume" />
+    <ListItem href="/" txt="home" />
+    <ListItem href="/feature-tv" txt="features / tv" />
+    <ListItem href="/documentaries" txt="documentary" />
+    <ListItem href="/music-videos" txt="music videos" />
+    <ListItem href="/experimental" txt="experimental" />
+    <ListItem href="/photography" txt="photography" />
+    <ListItem href="/contact" txt="contact" />
+    <ListItem href="/resume" txt="resume" />
   </Ul>
 )
 
