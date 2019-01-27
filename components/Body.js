@@ -52,14 +52,14 @@ const groupBy2 = arr => {
   return formatted
 }
 
-const ListItem = ({ project, j }) => (
+const ListItem = ({ project }) => (
   <Col href={project.href}>
     <Title>{project.title}</Title>
     <Img src={project.thumbnail} alt={project.title} />
   </Col>
 )
 
-const Project = ({ p, i }) => (
+const Project = ({ p }) => (
   <AspectRatio>
     <Row>
       {p.map((project, j) => (
@@ -72,10 +72,15 @@ const Project = ({ p, i }) => (
 const List = () => (
   <ProjectConsumer>
     {projects => {
+      console.log("projects", projects)
+      if (projects.length) {
+        return
+      }
       const formattedProjects = groupBy2(projects)
+      console.log("formattedProjects", formattedProjects)
       return (
         <Ul>
-          {formattedProjects.map((p, i) => (
+          {projects.map((p, i) => (
             <Project p={p} key={`${p[i].title}-${i}`} />
           ))}
         </Ul>

@@ -3,7 +3,6 @@ import db from "../db"
 
 let ProjectContext
 const { Provider, Consumer } = (ProjectContext = React.createContext())
-// Context.Consumer, Context.Provider
 
 class ProjectProvider extends React.Component {
   state = {

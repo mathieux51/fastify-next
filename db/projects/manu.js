@@ -6,9 +6,12 @@ import p3 from "../../assets/images/manu/3.png"
 export default {
   title: "manu",
   href: "/manu",
-  category: [p1, p2, p3],
-  photos: [],
-  video: "https://player.vimeo.com/video/264683681",
+  category: [],
+  photos: [p1, p2, p3],
+  video: {
+    type: "vimeo",
+    videoId: "264683681"
+  },
   thumbnail,
   description: `A documentary by Emmanuelle Bonmariage
 

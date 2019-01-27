@@ -12,7 +12,7 @@ export default {
   href: "/garçon",
   category: [],
   photos: [p1, p2, p3, p4, p5, p6, p7],
-  video: "",
+  video: null,
   thumbnail,
   description: `A short film by Isabelle Schapira
 

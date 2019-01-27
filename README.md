@@ -7,13 +7,16 @@
 
 # To do
 
-- [ ] Get the font
+- [ ] [Video player](https://github.com/xDae/react-plyr)
+- [x] Get the fonts
 - [ ] Change headers static files
-- [ ] comprehensive web fonts
-- [ ] polished from normalize
-- [ ] Theme
-- [ ] Intl (Facebook stuff?)
-- [ ] Fix deploy script
+- [x] comprehensive web fonts
+- [x] polished from normalize
+- [ ] Theme, css variables? currentColor?
+- [ ] Intl (~~Facebook stuff?~~ No ready), i18next has no support for SSR, ReactIntl for the win (tricky to implement and [might be buggy](https://github.com/zeit/next.js/tree/canary/examples/with-react-intl))
+- [x] Fix deploy script
+
+If Cloudflare:
 
 ```sh
 next build && next export && touch out/.nojekyll && touch out/CNAME && echo \"example.com\" >> out/CNAME    && push-dir --dir=out --branch=master

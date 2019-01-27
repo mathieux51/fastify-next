@@ -8,7 +8,7 @@ export default {
   category: [],
   thumbnail,
   photos: [p1, p2],
-  video: "",
+  video: null,
   description: `Tv serie - 6 x 52'
 
   Directed by Romain Graf
