@@ -4,6 +4,8 @@ import manu from "./projects/manu"
 import garcon from "./projects/garcon"
 import melanieDeBiasio from "./projects/melanie-de-biasio"
 import lesAmoureuses from "./projects/les-amoureuses"
+import christinaVantzou from "./projects/christina-vantzou"
+import theHiddenPart from "./projects/the-hidden-part"
 
 const projects = [
   helvetica,
@@ -11,7 +13,9 @@ const projects = [
   manu,
   garcon,
   melanieDeBiasio,
-  lesAmoureuses
+  lesAmoureuses,
+  christinaVantzou,
+  theHiddenPart
 ]
 
 export default {

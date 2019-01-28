@@ -8,10 +8,12 @@ export default {
   href: "/manu",
   category: [],
   photos: [p1, p2, p3],
-  video: {
-    type: "vimeo",
-    videoId: "264683681"
-  },
+  videos: [
+    {
+      type: "vimeo",
+      videoId: "264683681"
+    }
+  ],
   thumbnail,
   description: `A documentary by Emmanuelle Bonmariage
 

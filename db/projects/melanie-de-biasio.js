@@ -9,10 +9,12 @@ export default {
   category: [],
   thumbnail,
   photos: [p1, p2, p3],
-  video: {
-    type: "youtube",
-    videoId: "W0We6e7bZfA"
-  },
+  videos: [
+    {
+      type: "youtube",
+      videoId: "W0We6e7bZfA"
+    }
+  ],
   description: `
   - Your Freedom is the End of Me -
 

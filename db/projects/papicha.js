@@ -8,7 +8,7 @@ export default {
   category: [],
   thumbnail,
   photos: [p1, p2],
-  video: "",
+  videos: null,
   description: `Directed by Mounia Meddour
 
   Prod: Scope (BE) / High Sea (FR) / Tayda (ALG) / Ink Connection (FR)
