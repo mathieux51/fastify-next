@@ -1,4 +1,16 @@
 module.exports = {
   presets: ["next/babel"],
-  plugins: [["styled-components", { ssr: true }]]
+  plugins: [
+    [
+      "module-resolver",
+      {
+        root: ["./"],
+        alias: {
+          style: "./style",
+          components: "./components"
+        }
+      }
+    ],
+    ["styled-components", { ssr: true }]
+  ]
 }
