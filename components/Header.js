@@ -75,7 +75,7 @@ export default class extends React.PureComponent {
     const { isOpen } = this.state
     return (
       <Fragment>
-        <Nav>
+        <Nav id="nav">
           {isOpen && <List />}
           <Button onClick={this.handleOnClick}>Menu</Button>
         </Nav>

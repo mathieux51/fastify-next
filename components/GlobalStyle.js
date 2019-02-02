@@ -51,6 +51,9 @@ export default createGlobalStyle`
   .jc-c {
     justify-content: center;
   } 
+  .jc-e {
+    justify-content: flex-end;
+  } 
   .ai-c {
     align-items: center;
   }

@@ -7,7 +7,7 @@ const Main = styled.main`
 `
 
 export default () => (
-  <Main>
+  <Main id="main">
     <ProjectMosaique />
   </Main>
 )
