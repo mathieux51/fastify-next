@@ -2118,7 +2118,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _Link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Link */ "./components/Link.js");
+/* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../helpers */ "./helpers.js");
+/* harmony import */ var _Link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Link */ "./components/Link.js");
 var _jsxFileName = "/Users/mathieu/Projects/learning/react/fastify-next/components/Header.js";
 
 
@@ -2142,67 +2143,160 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+function _templateObject7() {
+  var data = _taggedTemplateLiteral(["\n    text-align: inherit;\n  "]);
+
+  _templateObject7 = function _templateObject7() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  var data = _taggedTemplateLiteral(["\n    display: none;\n  "]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    padding: 0;\n    border: 0;\n    & > li {\n      margin-right: 28px;\n    }\n    & > li:last-child {\n      margin-right: 0;\n    }\n  "]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n    order: -1;\n    border: 0;\n        \n  "]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n    font-size: 12px;\n  "]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n    border: 0;\n    overflow-x: scroll;\n  "]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    flex-direction: row;\n    justify-content: space-between;\n    border-bottom: 1px solid ", ";  \n  "]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 
 
+
+
+var Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.attrs({
+  className: "flex"
+}).withConfig({
+  displayName: "Header__Container",
+  componentId: "ku26kg-0"
+})(["flex-direction:column;margin:20px 20px 0;", ""], _helpers__WEBPACK_IMPORTED_MODULE_2__["media"].desktop(_templateObject(), function (_ref) {
+  var theme = _ref.theme;
+  return theme.g86;
+}));
 var Nav = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].nav.attrs({
   className: ""
 }).withConfig({
   displayName: "Header__Nav",
-  componentId: "ku26kg-0"
-})(["border-bottom:1px solid ", ";margin:15px 20px;"], function (_ref) {
-  var theme = _ref.theme;
+  componentId: "ku26kg-1"
+})(["border-bottom:1px solid ", ";margin:15px 20px;", ""], function (_ref2) {
+  var theme = _ref2.theme;
   return theme.g86;
-});
-var StyledLink = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(_Link__WEBPACK_IMPORTED_MODULE_2__["default"]).attrs({
-  className: "ff-futura-pt f16 ttu tdn ta-c w100 d"
+}, _helpers__WEBPACK_IMPORTED_MODULE_2__["media"].desktop(_templateObject2()));
+var StyledLink = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(_Link__WEBPACK_IMPORTED_MODULE_3__["default"]).attrs({
+  className: "ff-futura-pt ttu tdn ta-c w100"
 }).withConfig({
   displayName: "Header__StyledLink",
-  componentId: "ku26kg-1"
-})(["letter-spacing:1px;line-height:2.5em;color:", ";"], function (_ref2) {
-  var theme = _ref2.theme;
+  componentId: "ku26kg-2"
+})(["display:inline-block;white-space:nowrap;overflow:hidden;letter-spacing:1px;line-height:2.5em;color:", ";font-size:16px;", ""], function (_ref3) {
+  var theme = _ref3.theme;
   return theme.g60;
-});
+}, _helpers__WEBPACK_IMPORTED_MODULE_2__["media"].desktop(_templateObject3()));
+var Title = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.attrs({
+  className: ""
+}).withConfig({
+  displayName: "Header__Title",
+  componentId: "ku26kg-3"
+})(["border-bottom:1px solid ", ";margin:0 20px;", ""], function (_ref4) {
+  var theme = _ref4.theme;
+  return theme.g86;
+}, _helpers__WEBPACK_IMPORTED_MODULE_2__["media"].desktop(_templateObject4()));
 var Ul = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].ul.attrs({
-  className: "fxd-c m0 p0"
+  className: "m0 p0"
 }).withConfig({
   displayName: "Header__Ul",
-  componentId: "ku26kg-2"
-})(["border-bottom:1px solid ", ";padding-bottom:15px;"], function (_ref3) {
-  var theme = _ref3.theme;
-  return theme.g86;
-});
+  componentId: "ku26kg-4"
+})(["padding-bottom:15px;display:", ";", ""], function (_ref5) {
+  var isOpen = _ref5.isOpen;
+  return !isOpen ? "none" : "inherit";
+}, _helpers__WEBPACK_IMPORTED_MODULE_2__["media"].desktop(_templateObject5()));
 var Button = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(StyledLink).attrs({
   as: "button"
 }).withConfig({
   displayName: "Header__Button",
-  componentId: "ku26kg-3"
-})(["height:70px;"]);
+  componentId: "ku26kg-5"
+})(["height:70px;", ""], _helpers__WEBPACK_IMPORTED_MODULE_2__["media"].desktop(_templateObject6()));
 
-var ListItem = function ListItem(_ref4) {
-  var href = _ref4.href,
-      txt = _ref4.txt;
+var ListItem = function ListItem(_ref6) {
+  var href = _ref6.href,
+      txt = _ref6.txt;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 78
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
     href: href,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 79
     },
     __self: this
   }, txt));
 };
 
-var List = function List() {
+var List = function List(_ref7) {
+  var isOpen = _ref7.isOpen;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Ul, {
+    isOpen: isOpen,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 84
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
@@ -2210,7 +2304,7 @@ var List = function List() {
     txt: "home",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 85
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
@@ -2218,7 +2312,7 @@ var List = function List() {
     txt: "features / tv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 86
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
@@ -2226,7 +2320,7 @@ var List = function List() {
     txt: "documentary",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 87
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
@@ -2234,7 +2328,7 @@ var List = function List() {
     txt: "music videos",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 88
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
@@ -2242,7 +2336,7 @@ var List = function List() {
     txt: "experimental",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 89
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
@@ -2250,7 +2344,7 @@ var List = function List() {
     txt: "photography",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 90
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
@@ -2258,7 +2352,7 @@ var List = function List() {
     txt: "contact",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 91
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
@@ -2266,35 +2360,26 @@ var List = function List() {
     txt: "resume",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 92
     },
     __self: this
   }));
 };
 
-var Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.attrs({
-  className: ""
-}).withConfig({
-  displayName: "Header__Container",
-  componentId: "ku26kg-4"
-})(["border-bottom:1px solid ", ";margin:0 20px;"], function (_ref5) {
-  var theme = _ref5.theme;
-  return theme.g86;
-});
 var H1 = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h1.attrs({
-  className: "ff-futura-pt m0 f31 fw300 ttu ta-c"
+  className: "ff-futura-pt m0 f31 fw300 ttu"
 }).withConfig({
   displayName: "Header__H1",
-  componentId: "ku26kg-5"
-})(["color:", ";"], function (_ref6) {
-  var theme = _ref6.theme;
+  componentId: "ku26kg-6"
+})(["color:", ";text-align:center;", ""], function (_ref8) {
+  var theme = _ref8.theme;
   return theme.g13;
-});
+}, _helpers__WEBPACK_IMPORTED_MODULE_2__["media"].desktop(_templateObject7()));
 var H2 = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h2.attrs({
   className: "ttu f12 ta-c fw400"
 }).withConfig({
   displayName: "Header__H2",
-  componentId: "ku26kg-6"
+  componentId: "ku26kg-7"
 })(["letter-spacing:5px;margin:8px 0 15px;"]);
 
 var _default =
@@ -2332,48 +2417,49 @@ function (_React$PureComponent) {
     key: "render",
     value: function render() {
       var isOpen = this.state.isOpen;
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 77
+          lineNumber: 123
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Nav, {
         id: "nav",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 78
+          lineNumber: 124
         },
         __self: this
-      }, isOpen && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(List, {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(List, {
+        isOpen: isOpen,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79
+          lineNumber: 125
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Button, {
         onClick: this.handleOnClick,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 126
         },
         __self: this
-      }, "Menu")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
+      }, "Menu")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Title, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 82
+          lineNumber: 128
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(H1, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 83
+          lineNumber: 129
         },
         __self: this
       }, "L\xE9o Lef\xE8vre"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(H2, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 84
+          lineNumber: 130
         },
         __self: this
       }, "Cinematographer")));
@@ -2801,7 +2887,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var projects = [_projects_christina_vantzou__WEBPACK_IMPORTED_MODULE_0__["default"], _projects_de_mon_coeur_froid__WEBPACK_IMPORTED_MODULE_1__["default"], _projects_foulek__WEBPACK_IMPORTED_MODULE_2__["default"], _projects_garcon__WEBPACK_IMPORTED_MODULE_3__["default"], _projects_globetrotteur__WEBPACK_IMPORTED_MODULE_4__["default"], _projects_helvetica__WEBPACK_IMPORTED_MODULE_5__["default"], _projects_je_les_aime_tous__WEBPACK_IMPORTED_MODULE_6__["default"], _projects_le_mal_du_citron__WEBPACK_IMPORTED_MODULE_7__["default"], _projects_le_skeleton_band__WEBPACK_IMPORTED_MODULE_8__["default"], _projects_les_amoureuses__WEBPACK_IMPORTED_MODULE_9__["default"], _projects_light_my_fire__WEBPACK_IMPORTED_MODULE_10__["default"], _projects_lost_exile__WEBPACK_IMPORTED_MODULE_11__["default"], _projects_manu__WEBPACK_IMPORTED_MODULE_12__["default"], _projects_melanie_de_biasio__WEBPACK_IMPORTED_MODULE_13__["default"], _projects_morella__WEBPACK_IMPORTED_MODULE_14__["default"], _projects_papicha__WEBPACK_IMPORTED_MODULE_15__["default"], _projects_scarlett_o_hanna__WEBPACK_IMPORTED_MODULE_16__["default"], _projects_the_hidden_part__WEBPACK_IMPORTED_MODULE_17__["default"], _projects_valet_noir__WEBPACK_IMPORTED_MODULE_18__["default"], _projects_woodie_smalls__WEBPACK_IMPORTED_MODULE_19__["default"]];
+var projects = [_projects_helvetica__WEBPACK_IMPORTED_MODULE_5__["default"], _projects_papicha__WEBPACK_IMPORTED_MODULE_15__["default"], _projects_garcon__WEBPACK_IMPORTED_MODULE_3__["default"], _projects_manu__WEBPACK_IMPORTED_MODULE_12__["default"], _projects_melanie_de_biasio__WEBPACK_IMPORTED_MODULE_13__["default"], _projects_les_amoureuses__WEBPACK_IMPORTED_MODULE_9__["default"], _projects_christina_vantzou__WEBPACK_IMPORTED_MODULE_0__["default"], _projects_the_hidden_part__WEBPACK_IMPORTED_MODULE_17__["default"], _projects_le_skeleton_band__WEBPACK_IMPORTED_MODULE_8__["default"], _projects_lost_exile__WEBPACK_IMPORTED_MODULE_11__["default"], _projects_valet_noir__WEBPACK_IMPORTED_MODULE_18__["default"], _projects_je_les_aime_tous__WEBPACK_IMPORTED_MODULE_6__["default"], _projects_de_mon_coeur_froid__WEBPACK_IMPORTED_MODULE_1__["default"], _projects_le_mal_du_citron__WEBPACK_IMPORTED_MODULE_7__["default"], _projects_globetrotteur__WEBPACK_IMPORTED_MODULE_4__["default"], _projects_foulek__WEBPACK_IMPORTED_MODULE_2__["default"], _projects_morella__WEBPACK_IMPORTED_MODULE_14__["default"], _projects_light_my_fire__WEBPACK_IMPORTED_MODULE_10__["default"], _projects_woodie_smalls__WEBPACK_IMPORTED_MODULE_19__["default"], _projects_scarlett_o_hanna__WEBPACK_IMPORTED_MODULE_16__["default"]];
 /* harmony default export */ __webpack_exports__["default"] = ({
   projects: projects
 });
@@ -3722,7 +3808,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var media = Object.keys(_style_sizes__WEBPACK_IMPORTED_MODULE_1__["default"]).reduce(function (acc, label) {
   acc[label] = function () {
-    return Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["css"])(["@media (max-width:", "em){", "}"], _style_sizes__WEBPACK_IMPORTED_MODULE_1__["default"][label] / 16, styled_components__WEBPACK_IMPORTED_MODULE_0__["css"].apply(void 0, arguments));
+    return Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["css"])(["@media (min-width:", "em){", "}"], _style_sizes__WEBPACK_IMPORTED_MODULE_1__["default"][label] / 16, styled_components__WEBPACK_IMPORTED_MODULE_0__["css"].apply(void 0, arguments));
   };
 
   return acc;
