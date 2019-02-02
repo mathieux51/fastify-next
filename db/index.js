@@ -20,26 +20,26 @@ import valetNoir from "./projects/valet-noir"
 import woodieSmalls from "./projects/woodie-smalls"
 
 const projects = [
-  christinaVantzou,
-  deMonCoeur,
-  foulek,
-  garcon,
-  globetrotteur,
   helvetica,
-  jeLesAimeTous,
-  leMalDuCitron,
-  leSkeletonBand,
-  lesAmoureuses,
-  lightMyFire,
-  lostExile,
+  papicha,
+  garcon,
   manu,
   melanieDeBiasio,
-  morella,
-  papicha,
-  scarlettOHanna,
+  lesAmoureuses,
+  christinaVantzou,
   theHiddenPart,
+  leSkeletonBand,
+  lostExile,
   valetNoir,
-  woodieSmalls
+  jeLesAimeTous,
+  deMonCoeur,
+  leMalDuCitron,
+  globetrotteur,
+  foulek,
+  morella,
+  lightMyFire,
+  woodieSmalls,
+  scarlettOHanna
 ]
 
 export default {
