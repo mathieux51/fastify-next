@@ -7,6 +7,7 @@ module.exports = {
         root: ["./"],
         alias: {
           style: "./style",
+          helpers: "./helpers",
           components: "./components"
         }
       }
