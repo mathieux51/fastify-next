@@ -12,6 +12,7 @@ export const media = Object.keys(sizes).reduce((acc, label) => {
 
 export const groupBy2 = arr => {
   const formatted = []
-  while (arr.length > 0) formatted.push(arr.splice(0, 2))
+  const copyArr = arr.slice()
+  while (copyArr.length > 0) formatted.push(copyArr.splice(0, 2))
   return formatted
 }

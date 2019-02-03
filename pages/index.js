@@ -8,12 +8,9 @@ import Footer from "components/Footer"
 import GlobalStyle from "components/GlobalStyle"
 import theme from "style/theme"
 
-import db from "./db"
-console.log(db)
-
 export default () => (
-  <ProjectProvider projects={db.projects}>
-    <ThemeProvider theme={theme}>
+  <ThemeProvider theme={theme}>
+    <ProjectProvider>
       <Fragment>
         <GlobalStyle />
         <Head />
@@ -21,6 +18,6 @@ export default () => (
         <Body />
         <Footer />
       </Fragment>
-    </ThemeProvider>
-  </ProjectProvider>
+    </ProjectProvider>
+  </ThemeProvider>
 )

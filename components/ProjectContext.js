@@ -1,11 +1,13 @@
 import React from "react"
 
+import { projects } from "db"
+
 let ProjectContext
 const { Provider, Consumer } = (ProjectContext = React.createContext())
 
 class ProjectProvider extends React.Component {
   state = {
-    projects: this.props.projects
+    projects
   }
 
   render() {

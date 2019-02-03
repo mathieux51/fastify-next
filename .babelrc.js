@@ -6,10 +6,11 @@ module.exports = {
       {
         root: ["./"],
         alias: {
-          style: "./style",
-          helpers: "./helpers",
+          assets: "./assets",
           components: "./components",
-          assets: "./assets"
+          db: "./db",
+          helpers: "./helpers",
+          style: "./style"
         }
       }
     ],

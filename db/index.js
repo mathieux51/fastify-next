@@ -19,7 +19,7 @@ import theHiddenPart from "./projects/the-hidden-part"
 import valetNoir from "./projects/valet-noir"
 import woodieSmalls from "./projects/woodie-smalls"
 
-const projects = [
+export const projects = [
   helvetica,
   papicha,
   garcon,
@@ -41,7 +41,3 @@ const projects = [
   woodieSmalls,
   scarlettOHanna
 ]
-
-export default {
-  projects
-}
