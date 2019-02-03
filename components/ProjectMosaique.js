@@ -43,7 +43,7 @@ const ProjectMosaique = ({ projects }) => (
         <Row>
           {p.map((project, j) => (
             <StyledLink
-              innerAs={project.href}
+              // innerAs={project.href}
               href={`/projects?name=${project.href}`}
               key={`Col-${j}`}
             >
@@ -51,7 +51,7 @@ const ProjectMosaique = ({ projects }) => (
               <img
                 src={project.thumbnail}
                 alt={project.title}
-                className="absolute t0 r0 b0 l0 w100 h100 cover z-1"
+                className="absolute t0 r0 b0 l0 w100 h100 cover"
               />
             </StyledLink>
           ))}

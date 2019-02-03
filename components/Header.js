@@ -6,7 +6,6 @@ import Link from "./Link"
 
 const Container = styled.div.attrs({ className: "flex" })`
   flex-direction: column;
-  margin: 20px 20px 0;
   ${media.desktop`
     flex-direction: row;
     justify-content: space-between;
@@ -14,10 +13,11 @@ const Container = styled.div.attrs({ className: "flex" })`
   `}
 `
 
-const Nav = styled.nav.attrs({ className: "" })`
+const Nav = styled.nav`
   border-bottom: 1px solid ${({ theme }) => theme.g86};
-  margin: 15px 20px;
   ${media.desktop`
+    display: flex;
+    align-items: center;
     border: 0;
     overflow-x: scroll;
   `}
@@ -38,12 +38,11 @@ const StyledLink = styled(Link).attrs({
   `}
 `
 
-const Title = styled.div.attrs({
-  className: ""
-})`
+const Title = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.g86};
-  margin: 0 20px;
+  padding: 25px 0;
   ${media.desktop`
+    padding: 0 0 8px;
     order: -1;
     border: 0;
         
@@ -96,6 +95,7 @@ const List = ({ isOpen }) => (
 const H1 = styled.h1.attrs({
   className: "ff-futura-pt m0 f31 fw300 ttu"
 })`
+  letter-spacing: 0.096rem;
   color: ${({ theme }) => theme.g13};
   text-align: center;
   ${media.desktop`
@@ -106,8 +106,9 @@ const H1 = styled.h1.attrs({
 const H2 = styled.h2.attrs({
   className: "ttu f12 ta-c fw400"
 })`
-  letter-spacing: 5px;
-  margin: 8px 0 15px;
+  color: ${({ theme }) => theme.g78};
+  letter-spacing: 0.416rem;
+  margin: 12px 0 0;
 `
 
 export default class extends React.PureComponent {

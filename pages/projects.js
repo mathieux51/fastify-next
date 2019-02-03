@@ -1,11 +1,8 @@
 import React from "react"
+import Layout from "components/Layout"
 
-export default class extends React.Component {
-  // static async getInitialProps({query}) {
-  //   console.log('SLUG', query.slug)
-  //   return {}
-  // }
-  render() {
-    return <h1>My projects</h1>
-  }
-}
+export default () => (
+  <Layout>
+    <h1>My projects</h1>
+  </Layout>
+)

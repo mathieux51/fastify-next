@@ -7,8 +7,7 @@ import VimeoIcon from "components/VimeoIcon"
 import Link from "./Link"
 
 const Footer = styled.footer.attrs({ className: "flex jc-e" })`
-  /* height: 34px; */
-  margin: 33px 20px 20px;
+  margin: 33px 0 20px;
   padding-top: 50px;
   border-top: 1px solid ${({ theme }) => theme.g86};
 `

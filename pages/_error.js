@@ -11,7 +11,7 @@ export default class Error extends React.PureComponent {
       <p>
         {this.props.statusCode
           ? `An error ${this.props.statusCode} occurred on server`
-          : "An error occurred on client"}
+          : "An error occurred on client 🦉"}
       </p>
     )
   }
