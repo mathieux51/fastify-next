@@ -1,7 +1,7 @@
-import thumbnail from "../../assets/images/melanie-de-biasio/thumbnail.jpg"
-import p1 from "../../assets/images/melanie-de-biasio/1.jpg"
-import p2 from "../../assets/images/melanie-de-biasio/2.jpg"
-import p3 from "../../assets/images/melanie-de-biasio/3.jpg"
+import thumbnail from "assets/images/melanie-de-biasio/thumbnail.jpg"
+import p1 from "assets/images/melanie-de-biasio/1.jpg"
+import p2 from "assets/images/melanie-de-biasio/2.jpg"
+import p3 from "assets/images/melanie-de-biasio/3.jpg"
 
 export default {
   title: "Melanie de Biasio",

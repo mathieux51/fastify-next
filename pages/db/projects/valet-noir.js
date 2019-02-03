@@ -1,9 +1,9 @@
-import thumbnail from "../../assets/images/valet-noir/thumbnail.jpg"
-import p1 from "../../assets/images/valet-noir/1.jpg"
-import p2 from "../../assets/images/valet-noir/2.jpg"
-import p3 from "../../assets/images/valet-noir/3.jpg"
-import p4 from "../../assets/images/valet-noir/4.jpg"
-import p5 from "../../assets/images/valet-noir/5.jpg"
+import thumbnail from "assets/images/valet-noir/thumbnail.jpg"
+import p1 from "assets/images/valet-noir/1.jpg"
+import p2 from "assets/images/valet-noir/2.jpg"
+import p3 from "assets/images/valet-noir/3.jpg"
+import p4 from "assets/images/valet-noir/4.jpg"
+import p5 from "assets/images/valet-noir/5.jpg"
 
 export default {
   title: "Valet Noir",

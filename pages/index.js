@@ -8,20 +8,19 @@ import Footer from "components/Footer"
 import GlobalStyle from "components/GlobalStyle"
 import theme from "style/theme"
 
-export default class extends React.PureComponent {
-  render() {
-    return (
-      <ThemeProvider theme={theme}>
-        <ProjectProvider>
-          <Fragment>
-            <GlobalStyle />
-            <Head />
-            <Header />
-            <Body />
-            <Footer />
-          </Fragment>
-        </ProjectProvider>
-      </ThemeProvider>
-    )
-  }
-}
+import db from "./db"
+console.log(db)
+
+export default () => (
+  <ProjectProvider projects={db.projects}>
+    <ThemeProvider theme={theme}>
+      <Fragment>
+        <GlobalStyle />
+        <Head />
+        <Header />
+        <Body />
+        <Footer />
+      </Fragment>
+    </ThemeProvider>
+  </ProjectProvider>
+)

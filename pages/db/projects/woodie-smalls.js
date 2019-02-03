@@ -1,5 +1,5 @@
-import thumbnail from "../../assets/images/woodie-smalls/thumbnail.jpg"
-import p1 from "../../assets/images/woodie-smalls/1.jpg"
+import thumbnail from "assets/images/woodie-smalls/thumbnail.jpg"
+import p1 from "assets/images/woodie-smalls/1.jpg"
 
 export default {
   title: "Woodie Smalls",

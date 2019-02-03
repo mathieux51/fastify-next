@@ -1,4 +1,4 @@
-import thumbnail from "../../assets/images/christina-vantzou/thumbnail.jpg"
+import thumbnail from "assets/images/christina-vantzou/thumbnail.jpg"
 
 export default {
   title: "Christina Vantzou",

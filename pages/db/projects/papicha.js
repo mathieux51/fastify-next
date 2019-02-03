@@ -1,6 +1,6 @@
-import thumbnail from "../../assets/images/papicha/thumbnail.jpg"
-import p1 from "../../assets/images/papicha/1.jpg"
-import p2 from "../../assets/images/papicha/2.jpg"
+import thumbnail from "assets/images/papicha/thumbnail.jpg"
+import p1 from "assets/images/papicha/1.jpg"
+import p2 from "assets/images/papicha/2.jpg"
 
 export default {
   title: "Papicha",

@@ -1,12 +1,12 @@
-import thumbnail from "../../assets/images/the-hidden-part/thumbnail.jpg"
-import p1 from "../../assets/images/the-hidden-part/1.jpg"
-import p2 from "../../assets/images/the-hidden-part/2.jpg"
-import p3 from "../../assets/images/the-hidden-part/3.jpg"
-import p4 from "../../assets/images/the-hidden-part/4.jpg"
-import p5 from "../../assets/images/the-hidden-part/5.jpg"
-import p6 from "../../assets/images/the-hidden-part/6.jpg"
-import p7 from "../../assets/images/the-hidden-part/7.jpg"
-import p8 from "../../assets/images/the-hidden-part/8.jpg"
+import thumbnail from "assets/images/the-hidden-part/thumbnail.jpg"
+import p1 from "assets/images/the-hidden-part/1.jpg"
+import p2 from "assets/images/the-hidden-part/2.jpg"
+import p3 from "assets/images/the-hidden-part/3.jpg"
+import p4 from "assets/images/the-hidden-part/4.jpg"
+import p5 from "assets/images/the-hidden-part/5.jpg"
+import p6 from "assets/images/the-hidden-part/6.jpg"
+import p7 from "assets/images/the-hidden-part/7.jpg"
+import p8 from "assets/images/the-hidden-part/8.jpg"
 
 export default {
   title: "The hidden part",

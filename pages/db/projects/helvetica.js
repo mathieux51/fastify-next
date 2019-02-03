@@ -1,6 +1,6 @@
-import thumbnail from "../../assets/images/helvetica/thumbnail.jpg"
-import p1 from "../../assets/images/helvetica/1.jpg"
-import p2 from "../../assets/images/helvetica/2.jpg"
+import thumbnail from "assets/images/helvetica/thumbnail.jpg"
+import p1 from "assets/images/helvetica/1.jpg"
+import p2 from "assets/images/helvetica/2.jpg"
 
 export default {
   title: "Helvetica",

@@ -1,13 +1,13 @@
-import thumbnail from "../../assets/images/lost-exile/thumbnail.jpg"
-import p1 from "../../assets/images/lost-exile/1.jpg"
-import p2 from "../../assets/images/lost-exile/2.jpg"
-import p3 from "../../assets/images/lost-exile/3.jpg"
-import p4 from "../../assets/images/lost-exile/4.jpg"
-import p5 from "../../assets/images/lost-exile/5.jpg"
-import p6 from "../../assets/images/lost-exile/6.jpg"
-import p7 from "../../assets/images/lost-exile/7.jpg"
-import p8 from "../../assets/images/lost-exile/8.jpg"
-import p9 from "../../assets/images/lost-exile/9.jpg"
+import thumbnail from "assets/images/lost-exile/thumbnail.jpg"
+import p1 from "assets/images/lost-exile/1.jpg"
+import p2 from "assets/images/lost-exile/2.jpg"
+import p3 from "assets/images/lost-exile/3.jpg"
+import p4 from "assets/images/lost-exile/4.jpg"
+import p5 from "assets/images/lost-exile/5.jpg"
+import p6 from "assets/images/lost-exile/6.jpg"
+import p7 from "assets/images/lost-exile/7.jpg"
+import p8 from "assets/images/lost-exile/8.jpg"
+import p9 from "assets/images/lost-exile/9.jpg"
 
 export default {
   title: "Lost Exile",

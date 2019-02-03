@@ -53,6 +53,7 @@ export default class MyDocument extends Document {
         <body>
           <script dangerouslySetInnerHTML={script} />
           <Main />
+          {/*  React-components outside of <Main /> will not be initialised by the browser. Do not add application logic here. If you need shared components in all your pages (like a menu or a toolbar), take a look at the App component instead. */}
           <NextScript />
         </body>
       </html>

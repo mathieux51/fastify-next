@@ -1,4 +1,4 @@
-import thumbnail from "../../assets/images/scarlett-o-hanna/thumbnail.jpg"
+import thumbnail from "assets/images/scarlett-o-hanna/thumbnail.jpg"
 
 export default {
   title: "Scarlett O'Hanna",

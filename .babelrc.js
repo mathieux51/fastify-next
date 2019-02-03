@@ -8,7 +8,8 @@ module.exports = {
         alias: {
           style: "./style",
           helpers: "./helpers",
-          components: "./components"
+          components: "./components",
+          assets: "./assets"
         }
       }
     ],

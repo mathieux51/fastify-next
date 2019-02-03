@@ -1,7 +1,7 @@
-import thumbnail from "../../assets/images/manu/thumbnail.jpg"
-import p1 from "../../assets/images/manu/1.jpg"
-import p2 from "../../assets/images/manu/2.jpg"
-import p3 from "../../assets/images/manu/3.png"
+import thumbnail from "assets/images/manu/thumbnail.jpg"
+import p1 from "assets/images/manu/1.jpg"
+import p2 from "assets/images/manu/2.jpg"
+import p3 from "assets/images/manu/3.png"
 
 export default {
   title: "manu",

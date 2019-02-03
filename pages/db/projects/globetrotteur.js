@@ -1,6 +1,6 @@
-import thumbnail from "../../assets/images/globetrotteur/thumbnail.jpg"
-import p1 from "../../assets/images/globetrotteur/1.jpg"
-import p2 from "../../assets/images/globetrotteur/2.jpg"
+import thumbnail from "assets/images/globetrotteur/thumbnail.jpg"
+import p1 from "assets/images/globetrotteur/1.jpg"
+import p2 from "assets/images/globetrotteur/2.jpg"
 
 export default {
   title: "Globetrotteur",

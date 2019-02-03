@@ -36,29 +36,31 @@ const StyledLink = styled(Link).attrs({
   }
 `
 
-const ProjectMosaique = () => (
+const ProjectMosaique = ({ projects }) => (
+  <ul className="m0 p0">
+    {groupBy2(projects).map((p, i) => (
+      <AspectRatio key={`AspectRatio-${i}`}>
+        <Row>
+          {p.map((project, j) => (
+            <StyledLink href={project.href} key={`Col-${j}`}>
+              <Title>{project.title}</Title>
+              <img
+                src={project.thumbnail}
+                alt={project.title}
+                className="absolute t0 r0 b0 l0 w100 h100 cover z-1"
+              />
+            </StyledLink>
+          ))}
+        </Row>
+      </AspectRatio>
+    ))}
+  </ul>
+)
+
+const ProjectMosaiqueWithContext = () => (
   <ProjectConsumer>
-    {projects => (
-      <ul className="m0 p0">
-        {groupBy2(projects).map((p, i) => (
-          <AspectRatio key={`AspectRatio-${i}`}>
-            <Row>
-              {p.map((project, j) => (
-                <StyledLink href={project.href} key={`Col-${j}`}>
-                  <Title>{project.title}</Title>
-                  <img
-                    src={project.thumbnail}
-                    alt={project.title}
-                    className="absolute t0 r0 b0 l0 w100 h100 cover z-1"
-                  />
-                </StyledLink>
-              ))}
-            </Row>
-          </AspectRatio>
-        ))}
-      </ul>
-    )}
+    {projects => <ProjectMosaique projects={projects} />}
   </ProjectConsumer>
 )
 
-export default ProjectMosaique
+export default ProjectMosaiqueWithContext
