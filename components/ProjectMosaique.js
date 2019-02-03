@@ -13,7 +13,7 @@ const AspectRatio = styled.div.attrs({ className: "w100 relative" })`
 const Row = styled.div.attrs({ className: "absolute t0 l0 w100 h100 flex" })``
 
 const Title = styled.h3.attrs({
-  className: "fw300 ff-futura-pt f14 ttu ta-c"
+  className: "fw300 ff-futura-pt f14 ttu ta-c z1"
 })`
   display: none;
   color: ${({ theme }) => theme.fgs};
