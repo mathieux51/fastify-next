@@ -1,0 +1,112 @@
+webpackHotUpdate("static/development/pages/index.js",{
+
+/***/ "./components/Layout.js":
+/*!******************************!*\
+  !*** ./components/Layout.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _ProjectContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ProjectContext */ "./components/ProjectContext.js");
+/* harmony import */ var _style_theme__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../style/theme */ "./style/theme.js");
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
+/* harmony import */ var _Head__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Head */ "./components/Head.js");
+/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Footer */ "./components/Footer.js");
+/* harmony import */ var _GlobalStyle__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./GlobalStyle */ "./components/GlobalStyle.js");
+var _jsxFileName = "/Users/mathieu/Projects/learning/react/fastify-next/components/Layout.js";
+
+
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
+  var children = _ref.children;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_components__WEBPACK_IMPORTED_MODULE_1__["ThemeProvider"], {
+    theme: _style_theme__WEBPACK_IMPORTED_MODULE_3__["default"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ProjectContext__WEBPACK_IMPORTED_MODULE_2__["ProjectProvider"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_GlobalStyle__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Head__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }), children, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }))));
+});
+
+/***/ }),
+
+/***/ "./style/theme.js":
+/*!************************!*\
+  !*** ./style/theme.js ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var polished__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! polished */ "./node_modules/polished/dist/polished.es.js");
+
+var colors = {
+  white: "#fff",
+  black: "black"
+};
+/* harmony default export */ __webpack_exports__["default"] = ({
+  fg: colors.black,
+  // foreground primary
+  fgs: colors.white,
+  // foreground secondary secondary
+  bg: colors.white,
+  // background primary
+  g13: Object(polished__WEBPACK_IMPORTED_MODULE_0__["hsl"])(0, 0, 0.13),
+  g38: Object(polished__WEBPACK_IMPORTED_MODULE_0__["hsl"])(0, 0, 0.388),
+  g60: Object(polished__WEBPACK_IMPORTED_MODULE_0__["hsl"])(0, 0, 0.6),
+  g78: Object(polished__WEBPACK_IMPORTED_MODULE_0__["hsl"])(0, 0, 0.78),
+  g86: Object(polished__WEBPACK_IMPORTED_MODULE_0__["hsl"])(0, 0, 0.867)
+});
+
+/***/ })
+
+})
+//# sourceMappingURL=index.js.489033d6ff7d2a459b86.hot-update.js.map
