@@ -2384,8 +2384,8 @@ var H2 = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h2.attrs({
 
 var _default =
 /*#__PURE__*/
-function (_React$PureComponent) {
-  _inherits(_default, _React$PureComponent);
+function (_React$Component) {
+  _inherits(_default, _React$Component);
 
   function _default() {
     var _getPrototypeOf2;
@@ -2467,7 +2467,7 @@ function (_React$PureComponent) {
   }]);
 
   return _default;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.PureComponent);
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 
 
@@ -2631,8 +2631,8 @@ var _ProjectContext = ProjectContext = react__WEBPACK_IMPORTED_MODULE_0___defaul
 
 var ProjectProvider =
 /*#__PURE__*/
-function (_React$PureComponent) {
-  _inherits(ProjectProvider, _React$PureComponent);
+function (_React$Component) {
+  _inherits(ProjectProvider, _React$Component);
 
   function ProjectProvider() {
     var _getPrototypeOf2;
@@ -2648,18 +2648,7 @@ function (_React$PureComponent) {
     _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(ProjectProvider)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "state", {
-      projects: _db__WEBPACK_IMPORTED_MODULE_1__["default"].projects // handleLogin = Project => {
-      //   this.setState({ currentProject: Project })
-      // }
-      // handleLogout = () => {
-      //   this.setState({ currentProject: null })
-      // }
-      //value = {
-      //   projects: this.state.projects
-      //   // onLogin: this.handleLogin,
-      //   // onLogout: this.handleLogout
-      // }
-
+      projects: _db__WEBPACK_IMPORTED_MODULE_1__["projects"]
     });
 
     return _this;
@@ -2673,7 +2662,7 @@ function (_React$PureComponent) {
         value: projects,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27
+          lineNumber: 15
         },
         __self: this
       }, this.props.children);
@@ -2681,7 +2670,7 @@ function (_React$PureComponent) {
   }]);
 
   return ProjectProvider;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.PureComponent);
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 
 
@@ -2739,66 +2728,78 @@ var StyledLink = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["default"
   return theme.g60;
 }, Title);
 
-var ProjectMosaique = function ProjectMosaique() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ProjectContext__WEBPACK_IMPORTED_MODULE_3__["ProjectConsumer"], {
+var ProjectMosaique = function ProjectMosaique(_ref3) {
+  var projects = _ref3.projects;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+    className: "m0 p0",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 40
     },
     __self: this
-  }, function (projects) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-      className: "m0 p0",
+  }, Object(_helpers__WEBPACK_IMPORTED_MODULE_1__["groupBy2"])(projects).map(function (p, i) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(AspectRatio, {
+      key: "AspectRatio-".concat(i),
       __source: {
         fileName: _jsxFileName,
         lineNumber: 42
       },
       __self: this
-    }, Object(_helpers__WEBPACK_IMPORTED_MODULE_1__["groupBy2"])(projects).map(function (p, i) {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(AspectRatio, {
-        key: "AspectRatio-".concat(i),
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 44
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Row, {
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Row, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 43
+      },
+      __self: this
+    }, p.map(function (project, j) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
+        href: project.href,
+        key: "Col-".concat(j),
         __source: {
           fileName: _jsxFileName,
           lineNumber: 45
         },
         __self: this
-      }, p.map(function (project, j) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
-          href: project.href,
-          key: "Col-".concat(j),
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 47
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Title, {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 48
-          },
-          __self: this
-        }, project.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-          src: project.thumbnail,
-          alt: project.title,
-          className: "absolute t0 r0 b0 l0 w100 h100 cover z-1",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 49
-          },
-          __self: this
-        }));
-      })));
-    }));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Title, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46
+        },
+        __self: this
+      }, project.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: project.thumbnail,
+        alt: project.title,
+        className: "absolute t0 r0 b0 l0 w100 h100 cover z-1",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 47
+        },
+        __self: this
+      }));
+    })));
+  }));
+};
+
+var ProjectMosaiqueWithContext = function ProjectMosaiqueWithContext() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ProjectContext__WEBPACK_IMPORTED_MODULE_3__["ProjectConsumer"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61
+    },
+    __self: this
+  }, function (projects) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProjectMosaique, {
+      projects: projects,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 62
+      },
+      __self: this
+    });
   });
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (ProjectMosaique);
+/* harmony default export */ __webpack_exports__["default"] = (ProjectMosaiqueWithContext);
 
 /***/ }),
 
@@ -2842,11 +2843,12 @@ var _jsxFileName = "/Users/mathieu/Projects/learning/react/fastify-next/componen
 /*!*********************!*\
   !*** ./db/index.js ***!
   \*********************/
-/*! exports provided: default */
+/*! exports provided: projects */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "projects", function() { return projects; });
 /* harmony import */ var _projects_christina_vantzou__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./projects/christina-vantzou */ "./db/projects/christina-vantzou.js");
 /* harmony import */ var _projects_de_mon_coeur_froid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./projects/de-mon-coeur-froid */ "./db/projects/de-mon-coeur-froid.js");
 /* harmony import */ var _projects_foulek__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./projects/foulek */ "./db/projects/foulek.js");
@@ -2888,9 +2890,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var projects = [_projects_helvetica__WEBPACK_IMPORTED_MODULE_5__["default"], _projects_papicha__WEBPACK_IMPORTED_MODULE_15__["default"], _projects_garcon__WEBPACK_IMPORTED_MODULE_3__["default"], _projects_manu__WEBPACK_IMPORTED_MODULE_12__["default"], _projects_melanie_de_biasio__WEBPACK_IMPORTED_MODULE_13__["default"], _projects_les_amoureuses__WEBPACK_IMPORTED_MODULE_9__["default"], _projects_christina_vantzou__WEBPACK_IMPORTED_MODULE_0__["default"], _projects_the_hidden_part__WEBPACK_IMPORTED_MODULE_17__["default"], _projects_le_skeleton_band__WEBPACK_IMPORTED_MODULE_8__["default"], _projects_lost_exile__WEBPACK_IMPORTED_MODULE_11__["default"], _projects_valet_noir__WEBPACK_IMPORTED_MODULE_18__["default"], _projects_je_les_aime_tous__WEBPACK_IMPORTED_MODULE_6__["default"], _projects_de_mon_coeur_froid__WEBPACK_IMPORTED_MODULE_1__["default"], _projects_le_mal_du_citron__WEBPACK_IMPORTED_MODULE_7__["default"], _projects_globetrotteur__WEBPACK_IMPORTED_MODULE_4__["default"], _projects_foulek__WEBPACK_IMPORTED_MODULE_2__["default"], _projects_morella__WEBPACK_IMPORTED_MODULE_14__["default"], _projects_light_my_fire__WEBPACK_IMPORTED_MODULE_10__["default"], _projects_woodie_smalls__WEBPACK_IMPORTED_MODULE_19__["default"], _projects_scarlett_o_hanna__WEBPACK_IMPORTED_MODULE_16__["default"]];
-/* harmony default export */ __webpack_exports__["default"] = ({
-  projects: projects
-});
 
 /***/ }),
 
@@ -3815,9 +3814,10 @@ var media = Object.keys(_style_sizes__WEBPACK_IMPORTED_MODULE_1__["default"]).re
 }, {});
 var groupBy2 = function groupBy2(arr) {
   var formatted = [];
+  var copyArr = arr.slice();
 
-  while (arr.length > 0) {
-    formatted.push(arr.splice(0, 2));
+  while (copyArr.length > 0) {
+    formatted.push(copyArr.splice(0, 2));
   }
 
   return formatted;
@@ -20884,8 +20884,7 @@ module.exports = function(module) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _default; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _components_ProjectContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/ProjectContext */ "./components/ProjectContext.js");
@@ -20897,23 +20896,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_theme__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../style/theme */ "./style/theme.js");
 var _jsxFileName = "/Users/mathieu/Projects/learning/react/fastify-next/pages/index.js";
 
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 
 
@@ -20922,80 +20904,58 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-
-
-
-var _default =
-/*#__PURE__*/
-function (_React$PureComponent) {
-  _inherits(_default, _React$PureComponent);
-
-  function _default() {
-    _classCallCheck(this, _default);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(_default).apply(this, arguments));
-  }
-
-  _createClass(_default, [{
-    key: "render",
-    value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_components__WEBPACK_IMPORTED_MODULE_1__["ThemeProvider"], {
-        theme: _style_theme__WEBPACK_IMPORTED_MODULE_8__["default"],
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 14
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ProjectContext__WEBPACK_IMPORTED_MODULE_2__["ProjectProvider"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 15
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 16
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_GlobalStyle__WEBPACK_IMPORTED_MODULE_7__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 17
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Head__WEBPACK_IMPORTED_MODULE_4__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 18
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 19
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Body__WEBPACK_IMPORTED_MODULE_5__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 20
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 21
-        },
-        __self: this
-      }))));
-    }
-  }]);
-
-  return _default;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.PureComponent);
-
-
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_components__WEBPACK_IMPORTED_MODULE_1__["ThemeProvider"], {
+    theme: _style_theme__WEBPACK_IMPORTED_MODULE_8__["default"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ProjectContext__WEBPACK_IMPORTED_MODULE_2__["ProjectProvider"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_GlobalStyle__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Head__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Body__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }))));
+});
     (function (Component, route) {
       if(!Component) return
       if (false) {}
