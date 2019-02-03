@@ -3,7 +3,7 @@ import p1 from "assets/images/woodie-smalls/1.jpg"
 
 export default {
   title: "Woodie Smalls",
-  href: "/woodie-smalls",
+  href: "woodie-smalls",
   category: [],
   thumbnail,
   photos: [p1],

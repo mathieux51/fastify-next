@@ -7,7 +7,7 @@ import p5 from "assets/images/valet-noir/5.jpg"
 
 export default {
   title: "Valet Noir",
-  href: "/valet-noir",
+  href: "valet-noir",
   category: [],
   thumbnail,
   photos: [p1, p2, p3, p4, p5],

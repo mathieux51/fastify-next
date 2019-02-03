@@ -4,7 +4,7 @@ import p2 from "assets/images/globetrotteur/2.jpg"
 
 export default {
   title: "Globetrotteur",
-  href: "/globetrotteur",
+  href: "globetrotteur",
   category: [],
   thumbnail,
   photos: [p1, p2],

@@ -110,7 +110,7 @@ const H2 = styled.h2.attrs({
   margin: 8px 0 15px;
 `
 
-export default class extends React.Component {
+export default class extends React.PureComponent {
   state = {
     isOpen: false
   }

@@ -11,7 +11,7 @@ import p9 from "assets/images/lost-exile/9.jpg"
 
 export default {
   title: "Lost Exile",
-  href: "/lost-exile",
+  href: "lost-exile",
   category: [],
   thumbnail,
   photos: [p1, p2, p3, p4, p5, p6, p7, p8, p9],

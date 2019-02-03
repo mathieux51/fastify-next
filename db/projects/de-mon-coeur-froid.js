@@ -9,7 +9,7 @@ import p7 from "assets/images/de-mon-coeur-froid/7.jpg"
 
 export default {
   title: "De mon coeur froid",
-  href: "/de-mon-coeur-froid",
+  href: "de-mon-coeur-froid",
   category: [],
   thumbnail,
   photos: [p1, p2, p3, p4, p5, p6, p7],

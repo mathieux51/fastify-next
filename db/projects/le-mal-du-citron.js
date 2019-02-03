@@ -10,7 +10,7 @@ import p8 from "assets/images/le-mal-du-citron/8.jpg"
 
 export default {
   title: "Le mal du citron",
-  href: "/le-mal-du-citron",
+  href: "le-mal-du-citron",
   category: [],
   thumbnail,
   photos: [p1, p2, p3, p4, p5, p6, p7],

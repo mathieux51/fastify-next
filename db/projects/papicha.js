@@ -4,7 +4,7 @@ import p2 from "assets/images/papicha/2.jpg"
 
 export default {
   title: "Papicha",
-  href: "/papicha",
+  href: "papicha",
   category: [],
   thumbnail,
   photos: [p1, p2],

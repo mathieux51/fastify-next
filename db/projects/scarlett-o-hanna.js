@@ -2,7 +2,7 @@ import thumbnail from "assets/images/scarlett-o-hanna/thumbnail.jpg"
 
 export default {
   title: "Scarlett O'Hanna",
-  href: "/scarlett-o-hanna",
+  href: "scarlett-o-hanna",
   category: [],
   thumbnail,
   photos: null,

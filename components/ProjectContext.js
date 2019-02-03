@@ -5,7 +5,7 @@ import { projects } from "db"
 let ProjectContext
 const { Provider, Consumer } = (ProjectContext = React.createContext())
 
-class ProjectProvider extends React.Component {
+class ProjectProvider extends React.PureComponent {
   state = {
     projects
   }

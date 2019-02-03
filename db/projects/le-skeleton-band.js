@@ -12,7 +12,7 @@ import p10 from "assets/images/le-skeleton-band/10.jpg"
 
 export default {
   title: "Le Skeleton Band",
-  href: "/le-skeleton-band",
+  href: "le-skeleton-band",
   category: [],
   thumbnail,
   photos: [p1, p2, p3, p4, p5, p6, p7, p8, p9, p10],

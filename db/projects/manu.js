@@ -5,7 +5,7 @@ import p3 from "assets/images/manu/3.png"
 
 export default {
   title: "manu",
-  href: "/manu",
+  href: "manu",
   category: [],
   photos: [p1, p2, p3],
   videos: [

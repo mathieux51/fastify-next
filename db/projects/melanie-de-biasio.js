@@ -5,7 +5,7 @@ import p3 from "assets/images/melanie-de-biasio/3.jpg"
 
 export default {
   title: "Melanie de Biasio",
-  href: "/melanie",
+  href: "melanie",
   category: [],
   thumbnail,
   photos: [p1, p2, p3],

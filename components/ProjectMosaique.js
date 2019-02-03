@@ -42,7 +42,11 @@ const ProjectMosaique = ({ projects }) => (
       <AspectRatio key={`AspectRatio-${i}`}>
         <Row>
           {p.map((project, j) => (
-            <StyledLink href={project.href} key={`Col-${j}`}>
+            <StyledLink
+              innerAs={project.href}
+              href={`/projects?name=${project.href}`}
+              key={`Col-${j}`}
+            >
               <Title>{project.title}</Title>
               <img
                 src={project.thumbnail}

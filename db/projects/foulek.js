@@ -9,7 +9,7 @@ import p7 from "assets/images/foulek/7.jpg"
 
 export default {
   title: "Foulek",
-  href: "/foulek",
+  href: "foulek",
   category: [],
   thumbnail,
   photos: [p1, p2, p3, p4, p5, p6, p7],

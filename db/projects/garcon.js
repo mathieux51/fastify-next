@@ -9,7 +9,7 @@ import p7 from "assets/images/garcon/7.jpg"
 
 export default {
   title: "garçon",
-  href: "/garçon",
+  href: "garçon",
   category: [],
   photos: [p1, p2, p3, p4, p5, p6, p7],
   videos: null,
