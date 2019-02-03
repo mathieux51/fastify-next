@@ -2795,7 +2795,7 @@ var Row = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.attrs({
   componentId: "xvhue5-1"
 })([""]);
 var Title = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].h3.attrs({
-  className: "fw300 ff-futura-pt f14 ttu ta-c"
+  className: "fw300 ff-futura-pt f14 ttu ta-c z1"
 }).withConfig({
   displayName: "ProjectMosaique__Title",
   componentId: "xvhue5-2"
