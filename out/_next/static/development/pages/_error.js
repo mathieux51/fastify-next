@@ -82,8 +82,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 var Error =
 /*#__PURE__*/
-function (_React$Component) {
-  _inherits(Error, _React$Component);
+function (_React$PureComponent) {
+  _inherits(Error, _React$PureComponent);
 
   function Error() {
     _classCallCheck(this, Error);
@@ -115,7 +115,7 @@ function (_React$Component) {
   }]);
 
   return Error;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.PureComponent);
 
 
     (function (Component, route) {

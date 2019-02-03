@@ -2384,8 +2384,8 @@ var H2 = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h2.attrs({
 
 var _default =
 /*#__PURE__*/
-function (_React$Component) {
-  _inherits(_default, _React$Component);
+function (_React$PureComponent) {
+  _inherits(_default, _React$PureComponent);
 
   function _default() {
     var _getPrototypeOf2;
@@ -2467,7 +2467,7 @@ function (_React$Component) {
   }]);
 
   return _default;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.PureComponent);
 
 
 
@@ -2563,10 +2563,12 @@ var _jsxFileName = "/Users/mathieu/Projects/learning/react/fastify-next/componen
 
 /* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
   var href = _ref.href,
+      innerAs = _ref.innerAs,
       className = _ref.className,
       children = _ref.children;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: href,
+    as: innerAs,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 4
@@ -2631,8 +2633,8 @@ var _ProjectContext = ProjectContext = react__WEBPACK_IMPORTED_MODULE_0___defaul
 
 var ProjectProvider =
 /*#__PURE__*/
-function (_React$Component) {
-  _inherits(ProjectProvider, _React$Component);
+function (_React$PureComponent) {
+  _inherits(ProjectProvider, _React$PureComponent);
 
   function ProjectProvider() {
     var _getPrototypeOf2;
@@ -2670,7 +2672,7 @@ function (_React$Component) {
   }]);
 
   return ProjectProvider;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.PureComponent);
 
 
 
@@ -2753,7 +2755,8 @@ var ProjectMosaique = function ProjectMosaique(_ref3) {
       __self: this
     }, p.map(function (project, j) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
-        href: project.href,
+        innerAs: project.href,
+        href: "/projects?name=".concat(project.href),
         key: "Col-".concat(j),
         __source: {
           fileName: _jsxFileName,
@@ -2763,7 +2766,7 @@ var ProjectMosaique = function ProjectMosaique(_ref3) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Title, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 50
         },
         __self: this
       }, project.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -2772,7 +2775,7 @@ var ProjectMosaique = function ProjectMosaique(_ref3) {
         className: "absolute t0 r0 b0 l0 w100 h100 cover z-1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 51
         },
         __self: this
       }));
@@ -2784,7 +2787,7 @@ var ProjectMosaiqueWithContext = function ProjectMosaiqueWithContext() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ProjectContext__WEBPACK_IMPORTED_MODULE_3__["ProjectConsumer"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 65
     },
     __self: this
   }, function (projects) {
@@ -2792,7 +2795,7 @@ var ProjectMosaiqueWithContext = function ProjectMosaiqueWithContext() {
       projects: projects,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 62
+        lineNumber: 66
       },
       __self: this
     });
@@ -2907,7 +2910,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   title: "Christina Vantzou",
-  href: "/christina-vantzou",
+  href: "christina-vantzou",
   category: [],
   thumbnail: _assets_images_christina_vantzou_thumbnail_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
   photos: null,
@@ -2967,7 +2970,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   title: "De mon coeur froid",
-  href: "/de-mon-coeur-froid",
+  href: "de-mon-coeur-froid",
   category: [],
   thumbnail: _assets_images_de_mon_coeur_froid_thumbnail_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
   photos: [_assets_images_de_mon_coeur_froid_1_jpg__WEBPACK_IMPORTED_MODULE_1___default.a, _assets_images_de_mon_coeur_froid_2_jpg__WEBPACK_IMPORTED_MODULE_2___default.a, _assets_images_de_mon_coeur_froid_3_jpg__WEBPACK_IMPORTED_MODULE_3___default.a, _assets_images_de_mon_coeur_froid_4_jpg__WEBPACK_IMPORTED_MODULE_4___default.a, _assets_images_de_mon_coeur_froid_5_jpg__WEBPACK_IMPORTED_MODULE_5___default.a, _assets_images_de_mon_coeur_froid_6_jpg__WEBPACK_IMPORTED_MODULE_6___default.a, _assets_images_de_mon_coeur_froid_7_jpg__WEBPACK_IMPORTED_MODULE_7___default.a],
@@ -3015,7 +3018,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   title: "Foulek",
-  href: "/foulek",
+  href: "foulek",
   category: [],
   thumbnail: _assets_images_foulek_thumbnail_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
   photos: [_assets_images_foulek_1_jpg__WEBPACK_IMPORTED_MODULE_1___default.a, _assets_images_foulek_2_jpg__WEBPACK_IMPORTED_MODULE_2___default.a, _assets_images_foulek_3_jpg__WEBPACK_IMPORTED_MODULE_3___default.a, _assets_images_foulek_4_jpg__WEBPACK_IMPORTED_MODULE_4___default.a, _assets_images_foulek_5_jpg__WEBPACK_IMPORTED_MODULE_5___default.a, _assets_images_foulek_6_jpg__WEBPACK_IMPORTED_MODULE_6___default.a, _assets_images_foulek_7_jpg__WEBPACK_IMPORTED_MODULE_7___default.a],
@@ -3063,7 +3066,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   title: "garçon",
-  href: "/garçon",
+  href: "garçon",
   category: [],
   photos: [_assets_images_garcon_1_jpg__WEBPACK_IMPORTED_MODULE_1___default.a, _assets_images_garcon_2_jpg__WEBPACK_IMPORTED_MODULE_2___default.a, _assets_images_garcon_3_jpg__WEBPACK_IMPORTED_MODULE_3___default.a, _assets_images_garcon_4_jpg__WEBPACK_IMPORTED_MODULE_4___default.a, _assets_images_garcon_5_jpg__WEBPACK_IMPORTED_MODULE_5___default.a, _assets_images_garcon_6_jpg__WEBPACK_IMPORTED_MODULE_6___default.a, _assets_images_garcon_7_jpg__WEBPACK_IMPORTED_MODULE_7___default.a],
   videos: null,
@@ -3093,7 +3096,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   title: "Globetrotteur",
-  href: "/globetrotteur",
+  href: "globetrotteur",
   category: [],
   thumbnail: _assets_images_globetrotteur_thumbnail_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
   photos: [_assets_images_globetrotteur_1_jpg__WEBPACK_IMPORTED_MODULE_1___default.a, _assets_images_globetrotteur_2_jpg__WEBPACK_IMPORTED_MODULE_2___default.a],
@@ -3177,7 +3180,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   title: "Je les aime tous",
-  href: "/je-les-aime-tous",
+  href: "je-les-aime-tous",
   category: [],
   thumbnail: _assets_images_je_les_aime_tous_thumbnail_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
   photos: [_assets_images_je_les_aime_tous_1_jpg__WEBPACK_IMPORTED_MODULE_1___default.a, _assets_images_je_les_aime_tous_2_jpg__WEBPACK_IMPORTED_MODULE_2___default.a, _assets_images_je_les_aime_tous_3_jpg__WEBPACK_IMPORTED_MODULE_3___default.a, _assets_images_je_les_aime_tous_4_jpg__WEBPACK_IMPORTED_MODULE_4___default.a, _assets_images_je_les_aime_tous_5_jpg__WEBPACK_IMPORTED_MODULE_5___default.a, _assets_images_je_les_aime_tous_6_jpg__WEBPACK_IMPORTED_MODULE_6___default.a, _assets_images_je_les_aime_tous_7_jpg__WEBPACK_IMPORTED_MODULE_7___default.a, _assets_images_je_les_aime_tous_8_jpg__WEBPACK_IMPORTED_MODULE_8___default.a, _assets_images_je_les_aime_tous_9_jpg__WEBPACK_IMPORTED_MODULE_9___default.a, _assets_images_je_les_aime_tous_10_jpg__WEBPACK_IMPORTED_MODULE_10___default.a],
@@ -3228,7 +3231,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   title: "Le mal du citron",
-  href: "/le-mal-du-citron",
+  href: "le-mal-du-citron",
   category: [],
   thumbnail: _assets_images_le_mal_du_citron_thumbnail_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
   photos: [_assets_images_le_mal_du_citron_1_jpg__WEBPACK_IMPORTED_MODULE_1___default.a, _assets_images_le_mal_du_citron_2_jpg__WEBPACK_IMPORTED_MODULE_2___default.a, _assets_images_le_mal_du_citron_3_jpg__WEBPACK_IMPORTED_MODULE_3___default.a, _assets_images_le_mal_du_citron_4_jpg__WEBPACK_IMPORTED_MODULE_4___default.a, _assets_images_le_mal_du_citron_5_jpg__WEBPACK_IMPORTED_MODULE_5___default.a, _assets_images_le_mal_du_citron_6_jpg__WEBPACK_IMPORTED_MODULE_6___default.a, _assets_images_le_mal_du_citron_7_jpg__WEBPACK_IMPORTED_MODULE_7___default.a],
@@ -3285,7 +3288,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   title: "Le Skeleton Band",
-  href: "/le-skeleton-band",
+  href: "le-skeleton-band",
   category: [],
   thumbnail: _assets_images_le_skeleton_band_thumbnail_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
   photos: [_assets_images_le_skeleton_band_1_jpg__WEBPACK_IMPORTED_MODULE_1___default.a, _assets_images_le_skeleton_band_2_jpg__WEBPACK_IMPORTED_MODULE_2___default.a, _assets_images_le_skeleton_band_3_jpg__WEBPACK_IMPORTED_MODULE_3___default.a, _assets_images_le_skeleton_band_4_jpg__WEBPACK_IMPORTED_MODULE_4___default.a, _assets_images_le_skeleton_band_5_jpg__WEBPACK_IMPORTED_MODULE_5___default.a, _assets_images_le_skeleton_band_6_jpg__WEBPACK_IMPORTED_MODULE_6___default.a, _assets_images_le_skeleton_band_7_jpg__WEBPACK_IMPORTED_MODULE_7___default.a, _assets_images_le_skeleton_band_8_jpg__WEBPACK_IMPORTED_MODULE_8___default.a, _assets_images_le_skeleton_band_9_jpg__WEBPACK_IMPORTED_MODULE_9___default.a, _assets_images_le_skeleton_band_10_jpg__WEBPACK_IMPORTED_MODULE_10___default.a],
@@ -3351,7 +3354,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   title: "Les amoureuses",
-  href: "/amoureuses",
+  href: "les-amoureuses",
   category: [],
   thumbnail: _assets_images_les_amoureuses_thumbnail_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
   photos: [_assets_images_les_amoureuses_1_jpg__WEBPACK_IMPORTED_MODULE_1___default.a, _assets_images_les_amoureuses_2_jpg__WEBPACK_IMPORTED_MODULE_2___default.a, _assets_images_les_amoureuses_3_jpg__WEBPACK_IMPORTED_MODULE_3___default.a, _assets_images_les_amoureuses_4_jpg__WEBPACK_IMPORTED_MODULE_4___default.a, _assets_images_les_amoureuses_5_jpg__WEBPACK_IMPORTED_MODULE_5___default.a, _assets_images_les_amoureuses_6_jpg__WEBPACK_IMPORTED_MODULE_6___default.a, _assets_images_les_amoureuses_7_jpg__WEBPACK_IMPORTED_MODULE_7___default.a, _assets_images_les_amoureuses_8_jpg__WEBPACK_IMPORTED_MODULE_8___default.a, _assets_images_les_amoureuses_9_jpg__WEBPACK_IMPORTED_MODULE_9___default.a, _assets_images_les_amoureuses_10_jpg__WEBPACK_IMPORTED_MODULE_10___default.a, _assets_images_les_amoureuses_11_jpg__WEBPACK_IMPORTED_MODULE_11___default.a],
@@ -3411,7 +3414,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   title: "Light my fire",
-  href: "/light-my-fire",
+  href: "light-my-fire",
   category: [],
   thumbnail: _assets_images_light_my_fire_thumbnail_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
   photos: [_assets_images_light_my_fire_1_jpg__WEBPACK_IMPORTED_MODULE_1___default.a, _assets_images_light_my_fire_2_jpg__WEBPACK_IMPORTED_MODULE_2___default.a, _assets_images_light_my_fire_3_jpg__WEBPACK_IMPORTED_MODULE_3___default.a, _assets_images_light_my_fire_4_jpg__WEBPACK_IMPORTED_MODULE_4___default.a, _assets_images_light_my_fire_5_jpg__WEBPACK_IMPORTED_MODULE_5___default.a, _assets_images_light_my_fire_6_jpg__WEBPACK_IMPORTED_MODULE_6___default.a, _assets_images_light_my_fire_7_jpg__WEBPACK_IMPORTED_MODULE_7___default.a, _assets_images_light_my_fire_8_jpg__WEBPACK_IMPORTED_MODULE_8___default.a, _assets_images_light_my_fire_9_jpg__WEBPACK_IMPORTED_MODULE_9___default.a, _assets_images_light_my_fire_10_jpg__WEBPACK_IMPORTED_MODULE_10___default.a, _assets_images_light_my_fire_11_jpg__WEBPACK_IMPORTED_MODULE_11___default.a],
@@ -3465,7 +3468,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   title: "Lost Exile",
-  href: "/lost-exile",
+  href: "lost-exile",
   category: [],
   thumbnail: _assets_images_lost_exile_thumbnail_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
   photos: [_assets_images_lost_exile_1_jpg__WEBPACK_IMPORTED_MODULE_1___default.a, _assets_images_lost_exile_2_jpg__WEBPACK_IMPORTED_MODULE_2___default.a, _assets_images_lost_exile_3_jpg__WEBPACK_IMPORTED_MODULE_3___default.a, _assets_images_lost_exile_4_jpg__WEBPACK_IMPORTED_MODULE_4___default.a, _assets_images_lost_exile_5_jpg__WEBPACK_IMPORTED_MODULE_5___default.a, _assets_images_lost_exile_6_jpg__WEBPACK_IMPORTED_MODULE_6___default.a, _assets_images_lost_exile_7_jpg__WEBPACK_IMPORTED_MODULE_7___default.a, _assets_images_lost_exile_8_jpg__WEBPACK_IMPORTED_MODULE_8___default.a, _assets_images_lost_exile_9_jpg__WEBPACK_IMPORTED_MODULE_9___default.a],
@@ -3501,7 +3504,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   title: "manu",
-  href: "/manu",
+  href: "manu",
   category: [],
   photos: [_assets_images_manu_1_jpg__WEBPACK_IMPORTED_MODULE_1___default.a, _assets_images_manu_2_jpg__WEBPACK_IMPORTED_MODULE_2___default.a, _assets_images_manu_3_png__WEBPACK_IMPORTED_MODULE_3___default.a],
   videos: [{
@@ -3537,7 +3540,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   title: "Melanie de Biasio",
-  href: "/melanie",
+  href: "melanie",
   category: [],
   thumbnail: _assets_images_melanie_de_biasio_thumbnail_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
   photos: [_assets_images_melanie_de_biasio_1_jpg__WEBPACK_IMPORTED_MODULE_1___default.a, _assets_images_melanie_de_biasio_2_jpg__WEBPACK_IMPORTED_MODULE_2___default.a, _assets_images_melanie_de_biasio_3_jpg__WEBPACK_IMPORTED_MODULE_3___default.a],
@@ -3597,7 +3600,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   title: "Morella",
-  href: "/morella",
+  href: "morella",
   category: [],
   thumbnail: _assets_images_morella_thumbnail_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
   photos: [_assets_images_morella_1_jpg__WEBPACK_IMPORTED_MODULE_1___default.a, _assets_images_morella_2_jpg__WEBPACK_IMPORTED_MODULE_2___default.a, _assets_images_morella_3_jpg__WEBPACK_IMPORTED_MODULE_3___default.a, _assets_images_morella_4_jpg__WEBPACK_IMPORTED_MODULE_4___default.a, _assets_images_morella_5_jpg__WEBPACK_IMPORTED_MODULE_5___default.a, _assets_images_morella_6_jpg__WEBPACK_IMPORTED_MODULE_6___default.a, _assets_images_morella_7_jpg__WEBPACK_IMPORTED_MODULE_7___default.a, _assets_images_morella_8_jpg__WEBPACK_IMPORTED_MODULE_8___default.a, _assets_images_morella_9_jpg__WEBPACK_IMPORTED_MODULE_9___default.a, _assets_images_morella_10_jpg__WEBPACK_IMPORTED_MODULE_10___default.a, _assets_images_morella_11_jpg__WEBPACK_IMPORTED_MODULE_11___default.a],
@@ -3630,7 +3633,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   title: "Papicha",
-  href: "/papicha",
+  href: "papicha",
   category: [],
   thumbnail: _assets_images_papicha_thumbnail_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
   photos: [_assets_images_papicha_1_jpg__WEBPACK_IMPORTED_MODULE_1___default.a, _assets_images_papicha_2_jpg__WEBPACK_IMPORTED_MODULE_2___default.a],
@@ -3654,7 +3657,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   title: "Scarlett O'Hanna",
-  href: "/scarlett-o-hanna",
+  href: "scarlett-o-hanna",
   category: [],
   thumbnail: _assets_images_scarlett_o_hanna_thumbnail_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
   photos: null,
@@ -3708,7 +3711,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   title: "The hidden part",
-  href: "/the-hidden-part",
+  href: "the-hidden-part",
   category: [],
   thumbnail: _assets_images_the_hidden_part_thumbnail_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
   photos: [_assets_images_the_hidden_part_1_jpg__WEBPACK_IMPORTED_MODULE_1___default.a, _assets_images_the_hidden_part_2_jpg__WEBPACK_IMPORTED_MODULE_2___default.a, _assets_images_the_hidden_part_3_jpg__WEBPACK_IMPORTED_MODULE_3___default.a, _assets_images_the_hidden_part_4_jpg__WEBPACK_IMPORTED_MODULE_4___default.a, _assets_images_the_hidden_part_5_jpg__WEBPACK_IMPORTED_MODULE_5___default.a, _assets_images_the_hidden_part_6_jpg__WEBPACK_IMPORTED_MODULE_6___default.a, _assets_images_the_hidden_part_7_jpg__WEBPACK_IMPORTED_MODULE_7___default.a, _assets_images_the_hidden_part_8_jpg__WEBPACK_IMPORTED_MODULE_8___default.a],
@@ -3750,7 +3753,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   title: "Valet Noir",
-  href: "/valet-noir",
+  href: "valet-noir",
   category: [],
   thumbnail: _assets_images_valet_noir_thumbnail_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
   photos: [_assets_images_valet_noir_1_jpg__WEBPACK_IMPORTED_MODULE_1___default.a, _assets_images_valet_noir_2_jpg__WEBPACK_IMPORTED_MODULE_2___default.a, _assets_images_valet_noir_3_jpg__WEBPACK_IMPORTED_MODULE_3___default.a, _assets_images_valet_noir_4_jpg__WEBPACK_IMPORTED_MODULE_4___default.a, _assets_images_valet_noir_5_jpg__WEBPACK_IMPORTED_MODULE_5___default.a],
@@ -3777,7 +3780,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   title: "Woodie Smalls",
-  href: "/woodie-smalls",
+  href: "woodie-smalls",
   category: [],
   thumbnail: _assets_images_woodie_smalls_thumbnail_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
   photos: [_assets_images_woodie_smalls_1_jpg__WEBPACK_IMPORTED_MODULE_1___default.a],
