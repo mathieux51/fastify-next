@@ -100,7 +100,7 @@ function (_React$PureComponent) {
           lineNumber: 11
         },
         __self: this
-      }, this.props.statusCode ? "An error ".concat(this.props.statusCode, " occurred on server") : "An error occurred on client");
+      }, this.props.statusCode ? "An error ".concat(this.props.statusCode, " occurred on server") : "An error occurred on client 🦉");
     }
   }], [{
     key: "getInitialProps",
