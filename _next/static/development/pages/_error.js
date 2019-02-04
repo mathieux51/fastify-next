@@ -140,7 +140,7 @@ function (_React$PureComponent) {
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!*******************************!*\
   !*** multi ./pages/_error.js ***!
   \*******************************/
@@ -165,5 +165,5 @@ module.exports = dll_831a3634f66cb1dada0c;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]));;
+},[[2,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=_error.js.map
