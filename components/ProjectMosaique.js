@@ -61,10 +61,8 @@ const ProjectMosaique = ({ projects }) => (
   </ul>
 )
 
-const ProjectMosaiqueWithContext = () => (
+export default props => (
   <ProjectConsumer>
-    {projects => <ProjectMosaique projects={projects} />}
+    {projects => <ProjectMosaique {...props} projects={projects} />}
   </ProjectConsumer>
 )
-
-export default ProjectMosaiqueWithContext
