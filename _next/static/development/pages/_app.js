@@ -2204,7 +2204,7 @@ var StyledLink = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"
   var theme = _ref3.theme;
   return theme.g60;
 }, _helpers__WEBPACK_IMPORTED_MODULE_2__["media"].desktop(_templateObject3()));
-var Title = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+var Title = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(_Link__WEBPACK_IMPORTED_MODULE_3__["default"]).withConfig({
   displayName: "Header__Title",
   componentId: "ku26kg-3"
 })(["border-bottom:1px solid ", ";padding:25px 0;", ""], function (_ref4) {
@@ -2264,7 +2264,7 @@ var List = function List(_ref7) {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
-    href: "/feature-tv",
+    href: "#feature-tv",
     txt: "features / tv",
     __source: {
       fileName: _jsxFileName,
@@ -2272,7 +2272,7 @@ var List = function List(_ref7) {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
-    href: "/documentaries",
+    href: "#documentaries",
     txt: "documentary",
     __source: {
       fileName: _jsxFileName,
@@ -2280,7 +2280,7 @@ var List = function List(_ref7) {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
-    href: "/music-videos",
+    href: "#music-videos",
     txt: "music videos",
     __source: {
       fileName: _jsxFileName,
@@ -2288,7 +2288,7 @@ var List = function List(_ref7) {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
-    href: "/experimental",
+    href: "#experimental",
     txt: "experimental",
     __source: {
       fileName: _jsxFileName,
@@ -2296,7 +2296,7 @@ var List = function List(_ref7) {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
-    href: "/photography",
+    href: "#photography",
     txt: "photography",
     __source: {
       fileName: _jsxFileName,
@@ -2304,7 +2304,7 @@ var List = function List(_ref7) {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
-    href: "/contact",
+    href: "#contact",
     txt: "contact",
     __source: {
       fileName: _jsxFileName,
@@ -2312,7 +2312,7 @@ var List = function List(_ref7) {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
-    href: "/resume",
+    href: "#resume",
     txt: "resume",
     __source: {
       fileName: _jsxFileName,
@@ -2404,6 +2404,7 @@ function (_React$PureComponent) {
         },
         __self: this
       }, "Menu")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Title, {
+        href: "/",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 129
