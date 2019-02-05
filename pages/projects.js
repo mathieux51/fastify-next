@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { withRouter } from 'next/router'
 import styled from 'styled-components'
 
@@ -39,7 +39,7 @@ const Projects = props => {
                 <Video type={v.type} videoId={v.videoId} key={v.videoId} />
               ))}
             <Img src={cur.thumbnail} />
-            {cur.photos && cur.photos.map(p => <Img src={p} />)}
+            {cur.photos && cur.photos.map(p => <Img src={p} key={p} />)}
           </RessourceContainer>
           <TextContainer>{cur.description}</TextContainer>
         </Fragment>
