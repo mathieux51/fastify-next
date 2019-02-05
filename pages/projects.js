@@ -29,17 +29,19 @@ const Projects = props => {
   const [cur] = props.projects.filter(p => p.href === props.router.query.name)
   console.log("cur", cur)
   return (
-    <Container>
-      <RessourceContainer>
-        {cur.videos &&
-          cur.videos.map(v => (
-            <Video type={v.type} videoId={v.videoId} key={v.videoId} />
-          ))}
-        <Img src={cur.thumbnail} />
-        {cur.photos && cur.photos.map(p => <Img src={p} />)}
-      </RessourceContainer>
-      <TextContainer>{cur.description}</TextContainer>
-    </Container>
+    cur && (
+      <Container>
+        <RessourceContainer>
+          {cur.videos &&
+            cur.videos.map(v => (
+              <Video type={v.type} videoId={v.videoId} key={v.videoId} />
+            ))}
+          <Img src={cur.thumbnail} />
+          {cur.photos && cur.photos.map(p => <Img src={p} />)}
+        </RessourceContainer>
+        <TextContainer>{cur.description}</TextContainer>
+      </Container>
+    )
   )
 }
 
