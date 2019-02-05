@@ -43,7 +43,6 @@ const ProjectMosaique = ({ projects }) => (
         <Row>
           {p.map((project, j) => (
             <StyledLink
-              // innerAs={project.href}
               href={`/projects?name=${project.href}`}
               key={`Col-${j}`}
             >
