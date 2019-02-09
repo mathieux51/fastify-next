@@ -28,25 +28,12 @@ export default {
       videoId: "113149852"
     }
   ],
-  description: `Music videos for the album "n°2" 
-
-  Directed by Christina Vantzou
-  
-  Produced by Kranky
-  
-  Shot on Phantom Miro M320s + Leitz samcine & Angenieux 25-250mm
-  
-  2014
-  
-  ---------------
-  
-  Camera Assistant: Elvis Fontaine Garant
-  
-  Gaffer:Denis Antheunissens
-  
-  Key Grip: Artur Castro Freire
-  
-  Grading: Florian Berutti
-  
-  www.christinavantzou.com`
+  meta: {
+    directorName: "Christina Vantzou",
+    producerName: "directorName",
+    cameraAssistantName: "Elvis Fontaine Garant",
+    gafferName: "Denis Antheunissens",
+    keyGripName: "Artur Castro Freire",
+    gradingName: "Florian Berutti"
+  }
 }

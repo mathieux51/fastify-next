@@ -16,24 +16,8 @@ export default {
       videoId: "51248767"
     }
   ],
-  description: `- THIEVES -
-
-  A music video by Scarlett O'Hanna & Léo Lefèvre
-  
-  Arri Alexa XT 4:3 / Phantom Miro M320s + Kowa anamorphic
-  
-  2013
-  
-  _______________________________________________
-  
-  
-  - ONE SUNDAY MORNING -
-  
-  a music video by Léo Lefèvre
-  
-  16mm
-  
-  Arri SR3 + Canon zoom lens
-  
-  2012`
+  meta: {
+    directorName1: "Scarlett O'Hanna",
+    directorName2: "Léo Lefèvre"
+  }
 }

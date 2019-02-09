@@ -1,0 +1,276 @@
+{
+  "christina-vantzou": [
+    "Music videos for the album n°2",
+    "Directed by {directorName}",
+    "Produced by {producerName}",
+    "Shot on Phantom Miro M320s + Leitz samcine & Angenieux 25-250mm",
+    2014,
+    "Camera Assistant: {cameraAssistantName}",
+    "Gaffer: {gafferName}",
+    "Key Grip: {keyGripName}",
+    "Grading: {gradingName}",
+    "www.christinavantzou.com"
+  ],
+  "de-mon-coeur-froid": [
+    "A short film by {directorName}",
+    "Shot in Brussels",
+    "Aaton Xtera + Zeiss HS",
+    "16mm expired film stocks",
+    "13'",
+    2015,
+    "Camera assistant: {firstCameraAssistant} and {secondCameraAssistant}",
+    "Gaffer : {gafferName}",
+    "Colorist: {coloristName}"
+  ],
+  "foulek": [
+    "A short film by {directorName}",
+    "Prod: {productionName}",
+    "Shot in Switzerland",
+    "Arri Alexa Mini + Leica set",
+    "18'",
+    2017,
+    "Camera assistant: {cameraAssistantName}",
+    "Gaffer: {gafferName}",
+    "Colorist: {coloristName}"
+  ],
+  "garcon": [
+    "A short film by {directorName}",
+    "Prod: {productionName}",
+    "Shot in Belgium",
+    "Red Dragon + Cooke S4",
+    2018,
+    "Camera assistant: {cameraAssistantName}",
+    "Gaffer: {gafferName}",
+    "Key Grip: {keyGripName}",
+    "Best cinematography Award @ FIFF 2018",
+    "Shortlist Magritte du Cinéma 2019"
+  ],
+  "globetrotteur": [
+    "A short film by {directorName1} & {directorName2}",
+    "Prod: {productionName}",
+    "Shot in France",
+    "Aaton 35 + Zeiss STD",
+    "Kodak Vision 3  250D/500T",
+    "13'",
+    2016,
+    "Camera assistant: {firstCameraAssistant} and {secondCameraAssistant}",
+    "Colorist: {coloristName}"
+  ],
+  "helvetica": [
+    "Tv serie - 6 x 52'",
+    "Directed by {directorName}",
+    "Prod: {firstProductionName} (CH) / {secondProductionName} (BE)",
+    "Arri Alexa Mini/PLUS + Zeiss Master Primes",
+    "Shot in Switzerland",
+    2019,
+    "Camera assistant: {cameraAssistant} (A cam)",
+    "Gaffer: {gafferName}",
+    "Key Grip: {keyGripName}",
+    "B cam operator: {bCamOperatorName}",
+    "Rental compagnies: {firstRentalCompany} / {secondRentalCompany}"
+  ],
+  "je-les-aime-tous": [
+    "A short film by {directorName}",
+    "Prod: {productionName}",
+    "Shot in France",
+    "Arri Amira + Leitz Samcine",
+    "25'",
+    2016,
+    "Camera assistant: {cameraAssistantName}",
+    "Gaffer: {gafferName}",
+    "Production design: {productionDesignName}",
+    "Colorist: {coloristName}"
+  ],
+  "le-mal-du-citron": [
+    "A short film by {directorName1} and {directorName2}",
+    "Produced by {productionName}",
+    "Shot in Collias (France)",
+    "S16mm",
+    "Aaton Xtera + Zeiss HS",
+    "Kodak 250D & 500T",
+    "21'",
+    "2013",
+    "Camera assistant: {cameraAssistantName}",
+    "Colorist: {coloristName}",
+    "* Festival Internacional de Valencia Special Mention of the Jury 2015 *",
+    "* Zürich, Schweizer Jugendfilmtage, 3. Preis Filmschulen 2015 *",
+    "* International Izmir Short Film Festival, Jury Special Award 2014 *"
+  ],
+  "le-skeleton-band": [
+    [
+      "L’ANONAGE",
+      [
+        "An experimental music video by {directorName}",
+        "S35mm",
+        "Arri 435 + handmade pinhole lens",
+        "Kodak 500T",
+        2014
+      ]
+    ],
+    [
+      "EMECHEE LA MECHE",
+      [
+        "A music video by {directorName}",
+        "S16mm",
+        "Arri SR3 + Zeiss HS / Leica macro",
+        "Kodak & Fuji stock  -  Cross process",
+        2012
+      ]
+    ],
+    [
+      "SOBRE ET MARIN",
+      [
+        "A music video by {directorName}",
+        "S16mm",
+        "Arri SR3 + Zeiss HS",
+        "Fuji 64D",
+        2012
+      ]
+    ]
+  ],
+  "les-amoureuses": [
+    "A short film by {directorName}",
+    "Prod: {productionName1} / {productionName2}",
+    "Shot in Brittany (France)",
+    "Red Scarlet + Leica Van Diemen",
+    "30'",
+    2014,
+    "Camera assistant: {cameraAssistantName}",
+    "Gaffer: {gafferName}",
+    "KeyGrip: {keyGripName}",
+    "Art direction: {artDirectionName}",
+    "Production design: {productionDesignName}",
+    "Colorist: {coloristName}",
+    "*** Best cinematography award Namur Film Festival 2015 ***",
+    "* Best actress award at FIFB 2015 *",
+    "* Nominé best short Magritte du Cinéma 2016 *"
+  ],
+  "light-my-fire": [
+    "A short film directed by {directorName}",
+    "Shot in Brussels",
+    "Canon 7D + Kowa lenses",
+    "15'55''",
+    "2012",
+    "Camera assistant: {cameraAssistantName}",
+    "Colorist: {coloristName}"
+  ],
+  "lost-exile": [
+    "A short film by {directorName}",
+    "Prod: {directorName1} and {directorName2}",
+    "Shot in Kosovo",
+    "Arri Alexa Plus + Zeiss T2.1",
+    "29'",
+    "2016",
+    "Camera assistant: {cameraAssistantName}",
+    "Gaffer: {gafferName}",
+    "Colorist: {coloristName}",
+    "Best Film - Ouchy Film AWARDS, Lausanne, 2016",
+    "Prix de la région Auvergne Rhône-Alpes - Villeurbanne 2016",
+    "Best Albanian short film - Tirana International Film Festival, Albania 2016",
+    "Best Short Film - New Delhi Shorts International Film Festival 2016",
+    "Mention spéciale Concorso nazionale Locarno film festival 2016"
+  ],
+  "manu": [
+    "A documentary by {directorName}",
+    "Cinematography shared with {cinematography1} and {cinematography2}",
+    "Prod: {productionName}",
+    "Shot in Belgium and France ",
+    "Sony FS7",
+    "90'",
+    "2017 ",
+    "* Shortlist Magritte du Cinéma 2019 * "
+  ],
+  "melanie-de-biasio": [
+    "{songName}",
+    "Directed by {directorName1} and {directorName2}",
+    "Produced by {producerName}",
+    "Alexa Mini / Arri Alexa XT + Lomo Anamophic lenses / Leica Van Diemen",
+    "2017",
+    "Cam B operator: {bCamOperatorName}",
+    "Camera Assistant: {cameraAssistantName}",
+    "Gaffer: {gafferName}",
+    "Key Grip: {keyGripName}",
+    "Grading: {gradingName}",
+    "Thanks to BFC Rental / Eye-Lite / KGS / Cobalt"
+  ],
+  "morella": [
+    "A short film by {directorName}",
+    "Produced by {producerName}",
+    "Arri Alexa + Leica Van Diemen.",
+    "16'50\"",
+    2014,
+    "Camera assistant: {cameraAssistantName}",
+    "Gaffer: {gafferName}",
+    "Colorist: {coloristName}"
+  ],
+  "papicha": [
+    "Directed by {directorName}",
+    [
+      "Prod:",
+      ["Scope (BE)", "High Sea (FR)", "Tayda (ALG)", "Ink Connection (FR)"]
+    ],
+    "Arri Alexa Mini + Leica set",
+    "Shot in Algeria",
+    2018,
+    "Camera asistant: {cameraAssistantName}",
+    "Gaffer: {gafferName1} and {gafferName2}",
+    "Key Grip: {keyGripName}",
+    "Colorist: {coloristName}"
+  ],
+  "scarlett-o-hanna": [
+    [
+      "THIEVES",
+      [
+        "A music video by {directorName1} & {directorName2}",
+        "Arri Alexa XT 4:3 / Phantom Miro M320s + Kowa anamorphic",
+        2013
+      ]
+    ],
+    [
+      "ONE SUNDAY MORNING",
+      [
+        "a music video by {directorName2}",
+        "16mm",
+        "Arri SR3 + Canon zoom lens",
+        2012
+      ]
+    ]
+  ],
+  "the-hidden-part": [
+    "A short film by {directorName1} and {directorName2}",
+    "Prod: {producerName}",
+    "Shot in Iceland",
+    "Arri Amira + Leitz Samciné",
+    "20'",
+    2014,
+    "Camera assistant: {cameraAssistantName}",
+    "KeyGrip: {keyGripName}",
+    "Colorist: {coloristName}",
+    "**** Best short film award at Namur Film Festival 2015 (FIFF) ***  ",
+    "*  Shortlist Magritte du cinéma 2016 *"
+  ],
+  "valet-noir": [
+    "A short film by {directorName}",
+    "Prod: {productionName}",
+    "Shot in Switzerland and France",
+    "Arri Alexa Mini + Ultraprimes",
+    "22'",
+    2017,
+    "Camera assistant: {cameraAssistantName}",
+    "Gaffer: {gafferName}",
+    "Colorist: {coloristName}",
+    "1st Prize Upcoming talent at Soleure festival 2018",
+    "Best Swiss Short award at the Kurzfilmtage Winterthur in 2017"
+  ],
+  "woodie-smalls": [
+    "{songName}",
+    "Directed by {directorName}",
+    "Cinematography: {cinematography1} & {cinematography2}",
+    "Shot on Arri Alexa Mini / Sony A7sII + Leica Van Diemen & Cooke Zoom",
+    2016,
+    "Camera assistant: {cameraAssistantName}",
+    "Ronin operator: {roninOperatorName}",
+    "Grip and electric: {gripAndElectricName1} and {gripAndElectricName2}",
+    "Colorist: {coloristName}"
+  ]
+}

@@ -23,21 +23,11 @@ export default {
       videoId: "115814798"
     }
   ],
-  description: `A short film by Mathilde Borcard
-
-  Produced by HEAD
- 
-  Arri Alexa + Leica Van Diemen.
- 
- 16'50"
- 
- 2014
- 
- ----
- 
- Camera assistant: Camille Langlois
- 
- Gaffer: Guillaume Kozakiewiez
- 
- Colorist: Florian Berutti`
+  meta: {
+    directorName: "Mathilde Borcard",
+    producerName: "HEAD",
+    cameraAssistantName: "Camille Langlois",
+    gafferName: "Guillaume Kozakiewiez",
+    coloristName: "Florian Berutti"
+  }
 }

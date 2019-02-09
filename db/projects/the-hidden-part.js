@@ -20,29 +20,12 @@ export default {
       videoId: "198251663"
     }
   ],
-  description: `A short film by Monique Marnette & Caroline D'Hondt
-
-  Prod: Man's Films
-  
-  Shot in Iceland
-  
-  Arri Amira + Leitz Samciné
-  
-  20'
-  
-  2014
-  
-  ----
-  
-  Camera assistant: Joachim Philippe
-  
-  KeyGrip: Corentin Geisen
-  
-  Colorist: Olivier Ogneux
-  
-  ——
-  
-  **** Best short film award at Namur Film Festival 2015 (FIFF) ***
-  
-  *  Shortlist Magritte du cinéma 2016 *`
+  meta: {
+    directorName1: "Monique Marnette",
+    directorName2: "Caroline D'Hondt",
+    producerName: "Man's Films",
+    cameraAssistantName: "Joachim Philippe",
+    keyGripName: "Corentin Geisen",
+    coloristName: "Olivier Ogneux"
+  }
 }

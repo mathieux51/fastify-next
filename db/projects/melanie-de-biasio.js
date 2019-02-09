@@ -15,28 +15,15 @@ export default {
       videoId: "W0We6e7bZfA"
     }
   ],
-  description: `
-  - Your Freedom is the End of Me -
-
-  Directed by Yves Kuper & Mélanie de Biasio
-  
-  Produced by Nada Booking
-  
-  Alexa Mini / Arri Alexa XT + Lomo Anamophic lenses / Leica Van Diemen
-  
-  2017
-  
-  ---------------
-  
-  Cam B operator: Camille Langlois
-  
-  Camera Assistant: Elvis Fontaine Garant
-  
-  Gaffer: Cyril Dupont
-  
-  Key Grip: Corentin Geisen
-  
-  Grading: Loup Brenta
-  
-  Thx to BFC Rental / Eye-Lite / KGS / Cobalt`
+  meta: {
+    directorName1: "Yves Kuper",
+    directorName2: "Mélanie de Biasio",
+    producerName: "Nada Booking",
+    songName: "Your Freedom is the End of Me",
+    bCamOperatorName: "Camille Langlois",
+    cameraAssistantName: "Elvis Fontaine Garant",
+    gafferName: "Cyril Dupont",
+    keyGripName: "Corentin Geisen",
+    gradingName: "Loup Brenta"
+  }
 }

@@ -12,31 +12,11 @@ export default {
   thumbnail,
   photos: [p1, p2, p3, p4, p5],
   videos: null,
-  description: `A short film by Lora Mure-Ravaud
-
-  Prod: ALVA FILMS
-  
-  Shot in Switzerland / France
-  
-  Arri Alexa Mini + Ultraprimes
-  
-  22'
-  
-  2017
-  
-  ----
-  
-  Camera assistant: Guillaume Brandt
-  
-  Gaffer: Antonin Suppes
-  
-  Colorist: Loup Brenta 
-  
-  —
-  
-  Awards:
-  
-  1st Prize Upcoming talent at Soleure festival 2018
-  
-  Best Swiss Short award at the Kurzfilmtage Winterthur in 2017`
+  meta: {
+    directorName: "Lora Mure-Ravaud",
+    productionName: "ALVA FILMS",
+    cameraAssistantName: "Guillaume Brandt",
+    gafferName: "Antonin Suppes",
+    coloristName: "Loup Brenta"
+  }
 }

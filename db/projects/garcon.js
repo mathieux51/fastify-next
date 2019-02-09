@@ -14,27 +14,11 @@ export default {
   photos: [p1, p2, p3, p4, p5, p6, p7],
   videos: null,
   thumbnail,
-  description: `A short film by Isabelle Schapira
-
-  Prod: Hélicotronc
-  
-  Shot in Belgium
-  
-  Red Dragon + Cooke S4
-  
-  2018
-  
-  ----
-  
-  Camera assistant: Elvis Fontaine-Garant
-  
-  Gaffer: Thomas Bojan
-  
-  Key Grip: Julien Chassaignon 
-  
-  ----
-  
-  *** Best cinematography Award @ FIFF 2018 ***
-  
-  * Shortlist Magritte du Cinéma 2019`
+  meta: {
+    directorName: "Isabelle Schapira",
+    productionName: "Isabelle Schapira",
+    cameraAssistantName: "Elvis Fontaine-Garant",
+    gafferName: "Thomas Bojan",
+    keyGripName: "Julien Chassaignon"
+  }
 }

@@ -9,29 +9,15 @@ export default {
   thumbnail,
   photos: [p1, p2],
   videos: null,
-  description: `Tv serie - 6 x 52'
-
-  Directed by Romain Graf
-  
-  Prod: Rita Productions (CH) / Versus Productions (BE)
-  
-  Arri Alexa Mini/PLUS + Zeiss Master Primes
-  
-  Shot in Switzerland
-  
-  2019
-  
-  -
-  
-  Camera assistant: Elvis Fontaine Garant (A cam)
-  
-  Camera assistant: Guillaume Brandt (B cam)
-  
-  Gaffer: Dries de Paepe
-  
-  Key Grip: Julien Chassaignon
-  
-  B cam operator: Camille Langlois
-  
-  Rental compagnies: Visual Switzerland / WATTS`
+  meta: {
+    directorName: "Romain Graf",
+    firstProductionName: "Rita Productions",
+    secondProductionName: "Versus Productions",
+    cameraAssistant: "Elvis Fontaine Garant",
+    gafferName: "Dries de Paepe",
+    keyGripName: "Julien Chassaignon",
+    bCamOperatorName: "Camille Langlois",
+    firstRentalCompany: "Visual Switzerland",
+    secondRentalCompany: "WATTS"
+  }
 }

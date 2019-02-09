@@ -9,23 +9,12 @@ export default {
   thumbnail,
   photos: [p1, p2],
   videos: null,
-  description: `A short film by Kaspar Schiltnecht & Jérémy Rosenstein
-
-  Prod: Box Production
-  
-  Shot in France
-  
-  Aaton 35 + Zeiss STD
-  
-  Kodak Vision 3  250D/500T
-  
-  13'
-  
-  2016
-  
-  ----
-  
-  Camera assistant: Elvis Fontaine-Garant / Adrien Lengrand
-  
-  Colorist: Loup Brenta`
+  meta: {
+    directorName1: "Kaspar Schiltnecht",
+    directorName2: "Jérémy Rosenstein",
+    productionName: "Box Production",
+    firstCameraAssistant: "Elvis Fontaine-Garant",
+    secondCameraAssistant: "Adrien Lengrand",
+    coloristName: "Loup Brenta"
+  }
 }

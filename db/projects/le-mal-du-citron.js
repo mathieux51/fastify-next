@@ -20,33 +20,11 @@ export default {
       videoId: "120179434"
     }
   ],
-  description: `A short film by Jérémy Rosenstein & Kaspar Schiltnecht
-
-  Produced by Box Production
-  
-  Shot in Collias (France)
-  
-  S16mm
-  
-  Aaton Xtera + Zeiss HS
-  
-  Kodak 250D & 500T
-  
-  21'
-  
-  2013
-  
-  ----
-  
-  Camera assistant: Adrien Lengrand
-  
-  Colorist: Loup Brenta
-  
-  ----
-  
-  * Festival Internacional de Valencia Special Mention of the Jury 2015 *
-  
-  * Zürich, Schweizer Jugendfilmtage, 3. Preis Filmschulen 2015 *
-  
-  * International Izmir Short Film Festival, Jury Special Award 2014 *`
+  meta: {
+    directortName1: "Jérémy Rosenstein",
+    directortName2: "Kaspar Schiltnecht",
+    productionName: "Box Production",
+    cameraAssistantName: "Adrien Lengrand",
+    coloristName: "Loup Brenta"
+  }
 }

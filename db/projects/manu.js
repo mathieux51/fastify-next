@@ -15,21 +15,10 @@ export default {
     }
   ],
   thumbnail,
-  description: `A documentary by Emmanuelle Bonmariage
-
-Cinematography shared with Joachim Philippe & Chris Renson
-
-Prod: Clin d'oeil Films
-
-Shot in Belgium / France 
-
-Sony FS7
-
-90'
-
-2017 
-
-——
-
-* Shortlist Magritte du Cinéma 2019 * `
+  meta: {
+    directorName: "Emmanuelle Bonmariage",
+    cinematography1: "Joachim Philippe",
+    cinematography2: "Chris Renson",
+    productionName: "Clin d'oeil Films"
+  }
 }

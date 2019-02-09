@@ -21,39 +21,12 @@ export default {
       videoId: "198256811"
     }
   ],
-  description: ` A short film by Fisnik Maxhuni
-
-  Prod: Alva Films / Ikone Studio
-  
-  Shot in Kosovo
-  
-  Arri Alexa Plus + Zeiss T2.1
-  
-  29'
-  
-  2016
-  
-  ----
-  
-  Camera assistant: Alexandre Cabanne
-  
-  Gaffer: Astrit Bica
-  
-  Colorist: Loup Brenta
-  
-  ----
-  
-  Best Film - Ouchy Film AWARDS, Lausanne, 2016
-  
-  
-  Prix de la région Auvergne Rhône-Alpes - Villeurbanne 2016
-  
-  
-  Best Albanian short film - Tirana International Film Festival, Albania 2016
-  
-  
-  Best Short Film - New Delhi Shorts International Film Festival 2016
-  
-  
-  Mention spéciale Concorso nazionale Locarno film festival 2016`
+  meta: {
+    directorName: "Fisnik Maxhuni",
+    directorName1: "Alva Films",
+    directorName2: "Ikone Studio",
+    cameraAssistantName: "Alexandre Cabanne",
+    gafferName: "Astrit Bica",
+    coloristName: "Loup Brenta"
+  }
 }

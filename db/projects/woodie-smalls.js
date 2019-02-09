@@ -13,23 +13,15 @@ export default {
       videoId: "173619922"
     }
   ],
-  description: `- Planet Shrooms -
-
-  Directed by Alice Khol
-  
-  Cinematography: Léo Lefèvre & Son Doan
-  
-  Shot on Arri Alexa Mini / Sony A7sII + Leica Van Diemen & Cooke Zoom
-  
-  2016
-  
-  ----
-  
-  Camera assistant: Alexandre Cabanne
-  
-  Ronin operator: Geoffroy Minne
-  
-  Grip & electric: Jérémy Bourgeois et Julien Ramirez
-  
-  Colorist: Paul Millot`
+  meta: {
+    songName: "Planet Shrooms",
+    directorName: "Alice Khol",
+    cinematography1: "Léo Lefèvre",
+    cinematography2: "Son Doan",
+    cameraAssistantName: "Alexandre Cabanne",
+    roninOperatorName: "Geoffroy Minne",
+    gripAndElectricName1: "Jérémy Bourgeois",
+    gripAndElectricName2: "Julien Ramirez",
+    coloristName: "Paul Millot"
+  }
 }

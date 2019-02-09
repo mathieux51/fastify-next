@@ -19,23 +19,11 @@ export default {
       videoId: "198489013"
     }
   ],
-  description: `A short film by Julie Sokolowski
-
-  Shot in Brussels
-  
-  Aaton Xtera + Zeiss HS
-  
-  16mm expired film stocks
-  
-  13'
-  
-  2015
-  
-  ----
-  
-  Camera assistant: Charlotte Marchal / Camille De Chenay
-  
-  Gaffer : Son Doan
-  
-  Colorist: Loup Brenta`
+  meta: {
+    directorName: "Julie Sokolowski",
+    firstCameraAssistant: "Charlotte Marchal",
+    secondCameraAssistant: "Camille De Chenay",
+    gafferName: "Son Doan",
+    coloristName: "Loup Brenta"
+  }
 }

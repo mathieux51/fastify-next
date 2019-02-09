@@ -23,37 +23,15 @@ export default {
       videoId: "198032798"
     }
   ],
-  description: `A short film by Catherine Cosme
-
-  Prod: Hélicotronc / La mer à boire
-  
-  Shot in Bretagne (France)
-  
-  Red Scarlet + Leica Van Diemen
-  
-  30'
-  
-  2014
-  
-  ----
-  
-  Camera assistant: Alexandre Cabanne
-  
-  Gaffer: Rémy Barbot
-  
-  KeyGrip: Artur Castro Freire
-  
-  Art direction: Eve Martin
-  
-  Production design: Gaëlle Ruwet
-  
-  Colorist: Olivier Ogneux 
-  
-  ——
-  
-  *** Best cinematography award Namur Film Festival 2015 ***
-  
-  * Best actress award at FIFB 2015 *
-  
-  * Nominé best short Magritte du Cinéma 2016 *`
+  meta: {
+    directorName: "Catherine Cosme",
+    productionName1: "Hélicotronc",
+    productionName2: "La mer à boire",
+    cameraAssistantName: "Alexandre Cabanne",
+    gafferName: "Rémy Barbot",
+    keyGripName: "Artur Castro Freire",
+    artDirectionName: "Eve Martin",
+    productionDesignName: "Gaëlle Ruwet",
+    coloristName: "Olivier Ogneux"
+  }
 }

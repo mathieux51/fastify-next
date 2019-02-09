@@ -30,43 +30,7 @@ export default {
       videoId: "35368139"
     }
   ],
-  description: `- L’ANONAGE -
-
-  An experimental music video by Léo Lefèvre
-  
-  S35mm
-  
-  Arri 435 + handmade pinhole lens
-  
-  Kodak 500T
-  
-  2014
-  
-  —————————————————————-
-  
-  - EMECHEE LA MECHE -
-  
-  A music video by Léo Lefèvre
-  
-  S16mm
-  
-  Arri SR3 + Zeiss HS / Leica macro
-  
-  Kodak & Fuji stock  -  Cross process
-  
-  2012
-  
-  ———————————————————
-  
-  - SOBRE ET MARIN -
-  
-  A music video by Léo Lefèvre
-  
-  S16mm
-  
-  Arri SR3 + Zeiss HS
-  
-  Fuji 64D
-  
-  2012`
+  meta: {
+    directorName: "Léo Lefèvre"
+  }
 }

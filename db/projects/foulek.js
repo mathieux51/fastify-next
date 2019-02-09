@@ -19,23 +19,11 @@ export default {
       videoId: "244049028"
     }
   ],
-  description: `A short film by Patrick Muroni
-
-  Prod: ECAL
-  
-  Shot in Switzerland
-  
-  Arri Alexa Mini + Leica set
-  
-  18'
-  
-  2017
-  
-  ----
-  
-  Camera assistant: Camille Langlois
-  
-  Gaffer: Antonin Suppes
-  
-  Colorist: Olivier Ogneux`
+  meta: {
+    directorName: "Patrick Muroni",
+    productionName: "ECAL",
+    cameraAssistantName: "Camille Langlois",
+    gafferName: "Antonin Suppes",
+    coloristName: "Olivier Ogneux"
+  }
 }

@@ -23,19 +23,9 @@ export default {
       videoId: "113279104"
     }
   ],
-  description: `A short film directed by Emilie Praneuf
-
-  Shot in Brussels
-  
-  Canon 7D + Kowa lenses
-  
-  15'55''
-  
-  2012
-  
-  ----
-  
-  Camera assistant: Son Doan
-  
-  Colorist: Florian Berutti`
+  meta: {
+    directorName: "Emilie Praneuf",
+    cameraAssistantName: "Son Doan",
+    coloristName: "Florian Berutti"
+  }
 }

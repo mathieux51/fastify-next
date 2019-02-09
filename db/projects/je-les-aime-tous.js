@@ -22,25 +22,12 @@ export default {
       videoId: "199982565"
     }
   ],
-  description: `A short film by Guillaume Kozakiewiez
-
-  Prod: Les 48° rugissants
-  
-  Shot in France
-  
-  Arri Amira + Leitz Samcine
-  
-  25'
-  
-  2016
-  
-  ----
-  
-  Camera assistant: Camille Langlois
-  
-  Gaffer: Enguerrand Gicquel
-  
-  Production design: Natalia Grabundzja
-  
-  Colorist: Olivier Ogneux`
+  meta: {
+    directorName: "Guillaume Kozakiewiez",
+    productionName: "Les 48° rugissants",
+    cameraAssistantName: "Camille Langlois",
+    gafferName: "Enguerrand Gicquel",
+    productionDesignName: "Natalia Grabundzja",
+    coloristName: "Olivier Ogneux"
+  }
 }
