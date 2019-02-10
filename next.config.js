@@ -19,6 +19,19 @@ module.exports = withBundleAnalyzer(
             analyzerMode: "static",
             reportFilename: "../bundles/client.html"
           }
+        },
+        exportPathMap(defaultPathMap) {
+          // 🚧 Fix me when intl is ready for export
+          // const pathMap = {}
+          // Object.entries(defaultPathMap).forEach(([key, value]) => {
+          //   pathMap[key] = value
+          //   ;["de", "en", "fr", "nl"].forEach(language => {
+          //     pathMap[`/${language}${key}`] = { ...value, query: { language } }
+          //   })
+          // })
+
+          // return pathMap;
+          return defaultPathMap
         }
       })
     )
