@@ -11,6 +11,8 @@
 - [ ] Theme, css variables? currentColor?
 - [ ] Add alt text for all the pictures when Intl is fixed
 - [ ] Change headers static files
+- [ ] Fix dates, we should be able to do `new Date('some date').getMonth()`
+- [ ] Fix 2 rental in `en.json`
 - [x] [Video player](https://github.com/xDae/react-plyr)
 - [x] Get the fonts
 - [x] comprehensive web fonts
