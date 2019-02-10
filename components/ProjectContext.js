@@ -11,8 +11,7 @@ class ProjectProvider extends React.PureComponent {
   }
 
   render() {
-    const { projects } = this.state
-    return <Provider value={projects}>{this.props.children}</Provider>
+    return <Provider value={this.state}>{this.props.children}</Provider>
   }
 }
 

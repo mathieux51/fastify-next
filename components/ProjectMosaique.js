@@ -63,6 +63,6 @@ const ProjectMosaique = ({ projects }) => (
 
 export default props => (
   <ProjectConsumer>
-    {projects => <ProjectMosaique {...props} projects={projects} />}
+    {({ projects }) => <ProjectMosaique {...props} projects={projects} />}
   </ProjectConsumer>
 )

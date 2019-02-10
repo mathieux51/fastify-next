@@ -47,6 +47,6 @@ const Projects = props => {
 
 export default withRouter(props => (
   <ProjectConsumer>
-    {projects => <Projects {...props} projects={projects} />}
+    {({ projects }) => <Projects {...props} projects={projects} />}
   </ProjectConsumer>
 ))
