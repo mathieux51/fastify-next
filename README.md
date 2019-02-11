@@ -18,4 +18,9 @@
 - [x] Get the fonts
 - [x] comprehensive web fonts
 - [x] polished from normalize
+- [ ] Theme, css variables? currentColor?
+- [x] Intl (~~Facebook stuff?~~ No ready), i18next has no support for SSR, ReactIntl for the win (tricky to implement and [might be buggy](https://github.com/zeit/next.js/tree/canary/examples/with-react-intl))
+- [ ] Add lang to html tag
+- [ ] Check language flow if app statically exported
+- [ ] Add alt text for all the pictures
 - [x] Fix deploy script
