@@ -38,7 +38,7 @@ const StyledLink = styled(Link).attrs({
   `}
 `
 
-const Title = styled.div`
+const Title = styled(Link)`
   border-bottom: 1px solid ${({ theme }) => theme.g86};
   padding: 25px 0;
   ${media.desktop`
@@ -82,13 +82,13 @@ const ListItem = ({ href, txt }) => (
 const List = ({ isOpen }) => (
   <Ul isOpen={isOpen}>
     <ListItem href="/" txt="home" />
-    <ListItem href="/feature-tv" txt="features / tv" />
-    <ListItem href="/documentaries" txt="documentary" />
-    <ListItem href="/music-videos" txt="music videos" />
-    <ListItem href="/experimental" txt="experimental" />
-    <ListItem href="/photography" txt="photography" />
-    <ListItem href="/contact" txt="contact" />
-    <ListItem href="/resume" txt="resume" />
+    <ListItem href="#feature-tv" txt="features / tv" />
+    <ListItem href="#documentaries" txt="documentary" />
+    <ListItem href="#music-videos" txt="music videos" />
+    <ListItem href="#experimental" txt="experimental" />
+    <ListItem href="#photography" txt="photography" />
+    <ListItem href="#contact" txt="contact" />
+    <ListItem href="#resume" txt="resume" />
   </Ul>
 )
 
@@ -126,7 +126,7 @@ export default class extends React.PureComponent {
           {<List isOpen={isOpen} />}
           <Button onClick={this.handleOnClick}>Menu</Button>
         </Nav>
-        <Title>
+        <Title href="/">
           <H1>Léo Lefèvre</H1>
           <H2>Cinematographer</H2>
         </Title>

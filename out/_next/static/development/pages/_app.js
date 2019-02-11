@@ -2204,7 +2204,7 @@ var StyledLink = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"
   var theme = _ref3.theme;
   return theme.g60;
 }, _helpers__WEBPACK_IMPORTED_MODULE_2__["media"].desktop(_templateObject3()));
-var Title = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+var Title = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(_Link__WEBPACK_IMPORTED_MODULE_3__["default"]).withConfig({
   displayName: "Header__Title",
   componentId: "ku26kg-3"
 })(["border-bottom:1px solid ", ";padding:25px 0;", ""], function (_ref4) {
@@ -2264,7 +2264,7 @@ var List = function List(_ref7) {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
-    href: "/feature-tv",
+    href: "#feature-tv",
     txt: "features / tv",
     __source: {
       fileName: _jsxFileName,
@@ -2272,7 +2272,7 @@ var List = function List(_ref7) {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
-    href: "/documentaries",
+    href: "#documentaries",
     txt: "documentary",
     __source: {
       fileName: _jsxFileName,
@@ -2280,7 +2280,7 @@ var List = function List(_ref7) {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
-    href: "/music-videos",
+    href: "#music-videos",
     txt: "music videos",
     __source: {
       fileName: _jsxFileName,
@@ -2288,7 +2288,7 @@ var List = function List(_ref7) {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
-    href: "/experimental",
+    href: "#experimental",
     txt: "experimental",
     __source: {
       fileName: _jsxFileName,
@@ -2296,7 +2296,7 @@ var List = function List(_ref7) {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
-    href: "/photography",
+    href: "#photography",
     txt: "photography",
     __source: {
       fileName: _jsxFileName,
@@ -2304,7 +2304,7 @@ var List = function List(_ref7) {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
-    href: "/contact",
+    href: "#contact",
     txt: "contact",
     __source: {
       fileName: _jsxFileName,
@@ -2312,7 +2312,7 @@ var List = function List(_ref7) {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
-    href: "/resume",
+    href: "#resume",
     txt: "resume",
     __source: {
       fileName: _jsxFileName,
@@ -2404,6 +2404,7 @@ function (_React$PureComponent) {
         },
         __self: this
       }, "Menu")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Title, {
+        href: "/",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 129
@@ -2604,20 +2605,26 @@ __webpack_require__.r(__webpack_exports__);
 var _jsxFileName = "/Users/mathieu/Projects/learning/react/fastify-next/components/Link.js";
 
 
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+
 /* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
-  var href = _ref.href,
-      innerAs = _ref.innerAs,
-      className = _ref.className,
-      children = _ref.children;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: href,
-    as: innerAs,
+  var className = _ref.className,
+      children = _ref.children,
+      rest = _objectWithoutProperties(_ref, ["className", "children"]);
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, _extends({}, rest, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 4
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: rest.href,
     className: className,
     __source: {
       fileName: _jsxFileName,

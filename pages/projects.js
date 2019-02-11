@@ -1,19 +1,21 @@
-import React from "react"
-import { withRouter } from "next/router"
-import styled from "styled-components"
+import React, { Fragment } from 'react'
+import { withRouter } from 'next/router'
+import styled from 'styled-components'
 
-import Video from "components/Video"
-import { ProjectConsumer } from "components/ProjectContext"
-import { media } from "helpers"
+import Video from 'components/Video'
+import { ProjectConsumer } from 'components/ProjectContext'
+import { media } from 'helpers'
 
-const Container = styled.div.attrs({ className: "flex" })`
+const Container = styled.div.attrs({ className: 'flex' })`
   margin-top: 50px;
   flex-direction: column;
   ${media.desktop`
     flex-direction: row;
   `}
 `
+
 const RessourceContainer = styled.div``
+
 const TextContainer = styled.div`
   margin: 17px;
   ${media.desktop`
@@ -21,27 +23,28 @@ const TextContainer = styled.div`
   `}
 `
 
-const Img = styled.img.attrs({ className: "cover w100" })`
+const Img = styled.img.attrs({ className: 'cover w100' })`
   margin-top: 30px;
 `
 
 const Projects = props => {
   const [cur] = props.projects.filter(p => p.href === props.router.query.name)
-  console.log("cur", cur)
   return (
-    cur && (
-      <Container>
-        <RessourceContainer>
-          {cur.videos &&
-            cur.videos.map(v => (
-              <Video type={v.type} videoId={v.videoId} key={v.videoId} />
-            ))}
-          <Img src={cur.thumbnail} />
-          {cur.photos && cur.photos.map(p => <Img src={p} />)}
-        </RessourceContainer>
-        <TextContainer>{cur.description}</TextContainer>
-      </Container>
-    )
+    <Container>
+      {cur && (
+        <Fragment>
+          <RessourceContainer>
+            {cur.videos &&
+              cur.videos.map(v => (
+                <Video type={v.type} videoId={v.videoId} key={v.videoId} />
+              ))}
+            <Img src={cur.thumbnail} />
+            {cur.photos && cur.photos.map(p => <Img src={p} key={p} />)}
+          </RessourceContainer>
+          <TextContainer>{cur.description}</TextContainer>
+        </Fragment>
+      )}
+    </Container>
   )
 }
 
