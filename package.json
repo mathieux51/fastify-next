@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "@zeit/next-bundle-analyzer": "^0.1.2",
+    "acorn": "^6.1.0",
     "babel-plugin-module-resolver": "^3.2.0",
     "babel-plugin-styled-components": "^1.10.0",
     "next-fonts": "^0.17.0",
