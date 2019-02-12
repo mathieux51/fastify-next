@@ -33,7 +33,7 @@ const script = {
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
     let lang = "nope"
-    if (ctx.req) {
+    if (ctx.req && ctx.req.headers) {
       lang = ctx.req.headers["accept-language"]
     }
     const sheet = new ServerStyleSheet()
