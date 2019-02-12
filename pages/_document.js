@@ -32,6 +32,10 @@ const script = {
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
+    let lang = "nope"
+    if (ctx.req) {
+      lang = ctx.req.headers["accept-language"]
+    }
     const sheet = new ServerStyleSheet()
 
     const originalRenderPage = ctx.renderPage
@@ -44,7 +48,8 @@ export default class MyDocument extends Document {
       const initialProps = await Document.getInitialProps(ctx)
       return {
         ...initialProps,
-        styles: [...initialProps.styles, ...sheet.getStyleElement()]
+        styles: [...initialProps.styles, ...sheet.getStyleElement()],
+        lang
       }
     } finally {
       sheet.seal()
@@ -52,7 +57,7 @@ export default class MyDocument extends Document {
   }
   render() {
     return (
-      <html>
+      <html lang={this.props.lang}>
         <Head>{this.props.styleTags}</Head>
         <body>
           <script dangerouslySetInnerHTML={script} />
