@@ -24,3 +24,4 @@
 - [ ] Check language flow if app statically exported
 - [ ] Add alt text for all the pictures
 - [x] Fix deploy script
+- [ ] Remove `acorn`
