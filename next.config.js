@@ -19,15 +19,26 @@ module.exports = withBundleAnalyzer(
       },
       exportPathMap(defaultPathMap) {
         // 🚧 Fix me when intl is ready for export
-        // const pathMap = {}
-        // Object.entries(defaultPathMap).forEach(([key, value]) => {
-        //   pathMap[key] = value
-        //   ;["de", "en", "fr", "nl"].forEach(language => {
-        //     pathMap[`/${language}${key}`] = { ...value, query: { language } }
-        //   })
-        // })
 
-        // return pathMap;
+        // defaultPathMap = {
+        //   "/404.html": { page: "/_error" },
+        //   "/index": { page: "/index" },
+        //   "/projects": { page: "/projects" },
+        //   "/": { page: "/" }
+        // }
+
+        // Object.entries(defaultPathMap).forEach(([key, value]) => {
+        //   console.log("key", key)
+        //   console.log("value", value)
+        //   ;["de", "en", "fr", "nl"].reduce((acc, lang => {
+        //       acc[`/db/lang/${language}${key}`] = {
+        //         ...value,
+        //         query: { language }
+        //       }
+        //     return acc
+        //   }), {})
+        // })
+        // return pathMap
         return defaultPathMap
       }
     })
