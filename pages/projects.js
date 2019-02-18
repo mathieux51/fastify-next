@@ -38,7 +38,7 @@ const Projects = props => {
               <Video type={v.type} videoId={v.videoId} key={v.videoId} />
             ))}
           <Img src={cur.thumbnail} />
-          {cur.photos && cur.photos.map(p => <Img src={p} />)}
+          {cur.photos && cur.photos.map(p => <Img src={p} key={p} />)}
         </RessourceContainer>
         {/* <TextContainer>{cur.description}</TextContainer> */}
       </Container>
