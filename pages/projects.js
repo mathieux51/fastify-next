@@ -29,21 +29,19 @@ const Img = styled.img.attrs({ className: "cover w100" })`
 
 const Projects = props => {
   const [cur] = props.projects.filter(p => p.href === props.router.query.name)
-  return (
-    cur && (
-      <Container>
-        <RessourceContainer>
-          {cur.videos &&
-            cur.videos.map(v => (
-              <Video type={v.type} videoId={v.videoId} key={v.videoId} />
-            ))}
-          <Img src={cur.thumbnail} />
-          {cur.photos && cur.photos.map(p => <Img src={p} key={p} />)}
-        </RessourceContainer>
-        {/* <TextContainer>{cur.description}</TextContainer> */}
-      </Container>
-    )
-  )
+  return cur ? (
+    <Container>
+      <RessourceContainer>
+        {cur.videos &&
+          cur.videos.map(v => (
+            <Video type={v.type} videoId={v.videoId} key={v.videoId} />
+          ))}
+        <Img src={cur.thumbnail} />
+        {cur.photos && cur.photos.map(p => <Img src={p} key={p} />)}
+      </RessourceContainer>
+      {/* <TextContainer>{cur.description}</TextContainer> */}
+    </Container>
+  ) : null
 }
 
 export default withRouter(props => (

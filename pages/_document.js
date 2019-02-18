@@ -1,6 +1,5 @@
 import Document, { Head, Main, NextScript } from "next/document"
 import { ServerStyleSheet } from "styled-components"
-import { getHtmlLang } from "../helpers"
 
 const script = {
   __html: `
@@ -53,7 +52,7 @@ export default class MyDocument extends Document {
   }
   render() {
     return (
-      <html lang={getHtmlLang()}>
+      <html lang="en">
         <Head>{this.props.styleTags}</Head>
         <body>
           <script dangerouslySetInnerHTML={script} />
