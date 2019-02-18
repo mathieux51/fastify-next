@@ -44,7 +44,8 @@ export default class MyDocument extends Document {
       const initialProps = await Document.getInitialProps(ctx)
       return {
         ...initialProps,
-        styles: [...initialProps.styles, ...sheet.getStyleElement()]
+        styles: [...initialProps.styles, ...sheet.getStyleElement()],
+        lang: ctx.query.lang
       }
     } finally {
       sheet.seal()
@@ -52,7 +53,7 @@ export default class MyDocument extends Document {
   }
   render() {
     return (
-      <html lang="en">
+      <html lang={this.props.lang || "en"}>
         <Head>{this.props.styleTags}</Head>
         <body>
           <script dangerouslySetInnerHTML={script} />
