@@ -32,28 +32,36 @@ const script = {
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
+    // 💅🏻
     const sheet = new ServerStyleSheet()
+    // Intl
+    // locale
+    const lang = ctx.query.lang || "en"
+    // react-intl locale data
+    // const localeDataFile = require(`react-intl/locale-data/${lang}`)
+    // console.log(localeDataScript)
 
-    const originalRenderPage = ctx.renderPage
     try {
+      const originalRenderPage = ctx.renderPage
+
       ctx.renderPage = () =>
         originalRenderPage({
           enhanceApp: App => props => sheet.collectStyles(<App {...props} />)
         })
-
       const initialProps = await Document.getInitialProps(ctx)
       return {
         ...initialProps,
         styles: [...initialProps.styles, ...sheet.getStyleElement()],
-        lang: ctx.query.lang
+        lang
       }
     } finally {
       sheet.seal()
     }
   }
   render() {
+    const { lang } = this.props
     return (
-      <html lang={this.props.lang || "en"}>
+      <html lang={lang}>
         <Head>{this.props.styleTags}</Head>
         <body>
           <script dangerouslySetInnerHTML={script} />

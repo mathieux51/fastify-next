@@ -8,6 +8,7 @@
 # To do
 
 - [ ] Intl (~~Facebook stuff?~~ No ready), i18next has no support for SSR, ReactIntl for the win (tricky to implement and [might be buggy](https://github.com/zeit/next.js/tree/canary/examples/with-react-intl))
+- [ ] meta description tag
 - [ ] Theme, css variables? currentColor?
 - [ ] Add alt text for all the pictures when Intl is fixed
 - [ ] Change headers static files
